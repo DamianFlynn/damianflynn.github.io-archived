@@ -1,0 +1,36 @@
+# Dependencies
+markdown:            kramdown
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           /:year/:month/:day/:title/
+relative_permalinks: true
+
+# Setup
+title:               "Digital Nervous System"
+tagline:             "Making Incredible Software, Incredibly Simple"
+description:         "Offering technical posts and how-to articles from an IT pro specializing in virtualization, networking, open source, & cloud computing"
+url:                 http://www.DamianFlynn.com
+baseurl:             /
+paginate:            10
+
+# About/contact
+author:
+  name:              Damian Flynn
+  url:               https://twitter.com/damian_flynn
+  email:             blog@damianflynn.com
+  github:            damianflynn
+  twitter:           damian_flynn
+
+# Custom vars
+version:             1.0.0
+
+# Exclude Ruby gem stuff
+exclude:             ["vendor"]
+
+# Gems
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
