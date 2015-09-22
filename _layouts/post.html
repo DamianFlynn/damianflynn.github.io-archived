@@ -6,7 +6,6 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date: "%-d %B %Y" }} &nbsp;&nbsp;&nbsp;{{ readtime }} min read.</span>
-  <span class="post-date" style="float: right;" id="ga-pageviews"></span>
   {{ content }}
   <span class="post-date">Tags:
     {% assign page_tags = page.tags | sort %}
