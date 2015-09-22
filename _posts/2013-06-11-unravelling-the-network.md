@@ -27,7 +27,7 @@ The synopsis of the paper is defined in a single sentence:
 
 
 
-[![061113_1251_Unravelling1](http://blogstorage.damianflynn.com/wordpress/2014/08/061113_1251_Unravelling1-300x93.jpg)](http://blogstorage.damianflynn.com/wordpress/2014/08/061113_1251_Unravelling1.jpg)
+[![061113_1251_Unravelling1](/Media/2014/08/061113_1251_Unravelling1-300x93.jpg)](/Media/2014/08/061113_1251_Unravelling1.jpg)
 
 Supporting this paper, I am hosting two live Webinars on this topic, the first today, and again on Thursday; the presentation will also be recorded for later review. If you are starting into a SCVMM 2012 SP1 project, or curious about what Software Defined Networks is all about, then surf over to the Savision site, and download the paper, and while you are there, connect to one of the live presentations.
 

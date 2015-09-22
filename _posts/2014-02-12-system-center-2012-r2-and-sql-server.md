@@ -24,7 +24,7 @@ My good friend, Paul Keely with _Infront Consulting_ has burned up some of his f
 
 If you are slightly interested in System Center, this book covers an area which is essentially untouched in any writer documents, and builds on his earlier revision published a few months ago.
 
-[![image](http://blogstorage.damianflynn.com/wordpress/2014/02/image.png)](http://gallery.technet.microsoft.com/SQL-2012-and-System-Center-553b5161)
+[![image](/Media/2014/02/image.png)](http://gallery.technet.microsoft.com/SQL-2012-and-System-Center-553b5161)
 
 In Pauls Own words:
 

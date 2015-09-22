@@ -143,7 +143,7 @@ LAN: 172.16.100.101
 
 HB: 192.168.10.101
 
-</td></tr></tbody></table>Once the Operating System is installed, from the table we can assign the Server Name, IP address, apply any windows updates which are available, etc. 
+</td></tr></tbody></table>Once the Operating System is installed, from the table we can assign the Server Name, IP address, apply any windows updates which are available, etc.
 
 For the purpose of the LAB, I am going disable Windows Firewall, and also enable Remote Desktop services to connect to the server’s, making the installation process a little easier.
 

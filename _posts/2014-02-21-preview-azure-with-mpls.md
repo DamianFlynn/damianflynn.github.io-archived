@@ -35,6 +35,6 @@ To tease a little more, this is an extract from the over posted here - [http://w
 > 
 > Currently, ExpressRoute is available in the US through the following partners:  
 > 
-> [![image](http://blogstorage.damianflynn.com/wordpress/2014/02/image_thumb.png)](http://blogstorage.damianflynn.com/wordpress/2014/02/image.png)
+> [![image](/Media/2014/02/image_thumb.png)](/Media/2014/02/image.png)
 > 
 > </blockquote>

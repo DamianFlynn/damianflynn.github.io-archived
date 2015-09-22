@@ -17,13 +17,13 @@ TechDays is an amazing event, and covers both Development and Operations tracks,
 
 
 To get involved, all you need is a browser and some time; then [OPEN THIS LINK](https://msdn.microsoft.com/en-gb/dn877971.aspx?WT.mc)
-		
+
 
 For more information on Day 1 and Day 3, [please check this link for the latest details](https://msdn.microsoft.com/en-gb/dn889884)
-		
 
-![](http://blogstorage.damianflynn.com/wordpress/2015/02/020215_2331_TechDaysOnl11.png)
-		
+
+![](/Media/2015/02/020215_2331_TechDaysOnl11.png)
+
 
 <table style="border-collapse:collapse" border="0" ><tbody valign="top" ><tr style="height: 29px; background: #70ad47" >
 <td style="padding-left: 11px; padding-right: 11px; border-top:  solid white 0.5pt; border-left:  solid white 0.5pt; border-bottom:  solid white 0.5pt; border-right:  none" >

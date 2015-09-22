@@ -17,7 +17,7 @@ tags:
 
 Brace yourself, the fun is about to truly begin. On Wednesday March 6th, Cisco will unveil its greatly anticipated Distributed Switch solution for Windows Server 2012 and Hyper-V; the Nexus 1000V.
 
-[![030113_1938_CiscoNexus11](http://blogstorage.damianflynn.com/wordpress/2014/08/030113_1938_CiscoNexus11.png)](http://blogstorage.damianflynn.com/wordpress/2014/08/030113_1938_CiscoNexus11.png)
+[![030113_1938_CiscoNexus11](/Media/2014/08/030113_1938_CiscoNexus11.png)](/Media/2014/08/030113_1938_CiscoNexus11.png)
 
 
 # What is the Nexus 1000V?

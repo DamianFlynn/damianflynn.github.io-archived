@@ -20,7 +20,7 @@ Wanting to use this script to do some automation and notifications related to th
 
 As I also spend a fair amount of time working with the rest of the System Center Suite, I wanted to also change the logging to the normal CMTrace format which I have become familiar with, but not to upset current users of the script, simply added a switch called -CMTrace to the command, to have the new format enabled.
 
-[![CMTrace for Get-SCOM MP](http://blogstorage.damianflynn.com/wordpress/2014/08/Get-SCOM-MP-CMTrace-300x47.png)](http://blogstorage.damianflynn.com/wordpress/2014/08/Get-SCOM-MP-CMTrace.png)
+[![CMTrace for Get-SCOM MP](/Media/2014/08/Get-SCOM-MP-CMTrace-300x47.png)](/Media/2014/08/Get-SCOM-MP-CMTrace.png)
 
 The updated work, with the blessing and overview of Stan is back on the TechNet Gallery, ready for your consumption.
 

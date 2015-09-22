@@ -96,6 +96,6 @@ PS> $workflowxml.Installer.Roles.Role | Select Component, Name
 
 This will then pump out to screen in the Name column all the Roles which you can define for your configuration
 
-![](http://blogstorage.damianflynn.com/wordpress/2013/04/042513_1133_PowerShellD1.png)
+![](/Media/2013/04/042513_1133_PowerShellD1.png)
 
 Now go play…

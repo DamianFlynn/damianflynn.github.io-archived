@@ -14,7 +14,7 @@ tags:
 - WS/SC
 ---
 
-I am still getting it a little hard to believe, but we done it again, and have published book 2![![HyperVBook](http://blogstorage.damianflynn.com/wordpress/2014/08/HyperVBook-239x300.jpg)](http://blogstorage.damianflynn.com/wordpress/2014/08/HyperVBook.jpg)
+I am still getting it a little hard to believe, but we done it again, and have published book 2![![HyperVBook](/Media/2014/08/HyperVBook-239x300.jpg)](/Media/2014/08/HyperVBook.jpg)
 
 The original team are somewhat back, however this time Hans opted for the role of technical editor rather than author (good call Mate). We also looped in from Microsoft a great mate, and extremely talented Michel Luescher
 

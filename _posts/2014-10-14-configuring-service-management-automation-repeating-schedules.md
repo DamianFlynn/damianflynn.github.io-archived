@@ -14,7 +14,7 @@ Service Management Automation is one of these tools which quickly becomes the ce
 
 However, the first time you are faced with the requirement to execute a flow on a schedule of 30 minutes for example, you will quickly release that this is still a V1 release, as the minimum granularity which we can define for execution is one day! OPPS!
 
-![](http://blogstorage.damianflynn.com/wordpress/2014/10/101414_0944_Configuring1.png)
+![](/Media/2014/10/101414_0944_Configuring1.png)
 
 
 # Now What?!?
@@ -38,7 +38,7 @@ An example of how I call this function would be as follows
 
 The results is a labour of love, with all the requested schedules created and ready for our consumption.
 
-![](http://blogstorage.damianflynn.com/wordpress/2014/10/101414_0944_Configuring2.png)
+![](/Media/2014/10/101414_0944_Configuring2.png)
 
 
 # Workflows

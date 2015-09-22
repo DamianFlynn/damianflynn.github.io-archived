@@ -24,13 +24,13 @@ But. Sadly as you quickly start to learn, that's not how the ball is going to ro
 
 The investigation begins when we take a closer look at the log, only to be presented in a repeating message that the MP is not working for HTTP traffic.
 
-[![SCCM-MP-HTTP-Errors](http://blogstorage.damianflynn.com/wordpress/2014/08/SCCM-MP-HTTP-Errors-300x46.png)](http://blogstorage.damianflynn.com/wordpress/2014/08/SCCM-MP-HTTP-Errors.png)
+[![SCCM-MP-HTTP-Errors](/Media/2014/08/SCCM-MP-HTTP-Errors-300x46.png)](/Media/2014/08/SCCM-MP-HTTP-Errors.png)
 
 Quickly, you connect over to the problem Management Point, and located the current IIS logs for this node. Quickly scrolling to a point where you can match the time stamps from the Control Manager with the events in IIS, so that you can get a view of what IIS is really up to.
 
 What you see, however looks a little odd, the issue which IIS is reporting is not HTTP, but actually HTTPS (note the Port is listed in the log below as 443). The error is indeed 403, but again looking at the log it is not a simple 403.0 HTTP code, but actually is a 403.16 HTTP code. A quick search on this one, and now I am very confused, as the code translates to **Client certificate is untrusted or invalid**?
 
-[![SCCM-IIS-HTTP-Log-403-16-Messages](http://blogstorage.damianflynn.com/wordpress/2014/08/SCCM-IIS-HTTP-Log-403-16-Messages-300x21.png)](http://blogstorage.damianflynn.com/wordpress/2014/08/SCCM-IIS-HTTP-Log-403-16-Messages.png)
+[![SCCM-IIS-HTTP-Log-403-16-Messages](/Media/2014/08/SCCM-IIS-HTTP-Log-403-16-Messages-300x21.png)](/Media/2014/08/SCCM-IIS-HTTP-Log-403-16-Messages.png)
 
 Ok, what give? All the certificates involved here are being issues from a new CA, I have triple checked to ensure that the root chain is in place, and that all the certificates issued by this new CA are of sound mind and body. So why is IIS reporting this error?
 
@@ -48,9 +48,9 @@ This issue occurs because a certificate that is not self-signed was installed in
 
 I like what I read now, and there is a simple PowerShell command which will help me validate that my server is not affected by this misconfiguration. Running the command should return nothing, as the root store should only have root certificates.
 
-    
+
     PS > Get-Childitem cert:\LocalMachine\root -Recurse | Where-Object {$_.Issuer -ne $_.Subject} | Format-List *
-    
+
     PSPath                   : Microsoft.PowerShell.SecurityCertificate::LocalMachineroot3DE2837CFE43D183879F1DF065CCD2CA40545FB1
     PSParentPath             : Microsoft.PowerShell.SecurityCertificate::LocalMachineroot
     PSChildName              : 3DE2837CFE43D183879F1DF065CCD2CA40545FB1
@@ -88,7 +88,7 @@ However, that’s not what happened, Instead I have a certificate in the Root St
 
 Now, looking at this certificate, I know that this has nothing to do with my SCCM environment, and getting rid of this is not going to be a problem. But where did it come from? Group Policy! Sure enough the certificate is published to the Root Store and not the Intermediate Store using Group Policy. So first things first, I get the root issue fixed, and then lets clean out this bad certificate from my local store.
 
-    
+
     PS > Get-Childitem cert:\LocalMachine\root -Recurse | Where-Object {$_.Issuer -ne $_.Subject} | del
     PS > Get-Childitem cert:\LocalMachine\root -Recurse | Where-Object {$_.Issuer -ne $_.Subject} | Format-List *
     PS >
@@ -98,6 +98,6 @@ Now, all that remains is that the server gets a quick reboot.
 
 Once the server is back online, I can quickly confirm in the IIS logs that my 400.16 is now replaced with a 200.0 message and everything is once more rosy in the world.
 
-[![SCCM-IIS-HTTP-Log-200-Messages](http://blogstorage.damianflynn.com/wordpress/2014/08/SCCM-IIS-HTTP-Log-200-Messages-300x19.png)](http://blogstorage.damianflynn.com/wordpress/2014/08/SCCM-IIS-HTTP-Log-200-Messages.png)
+[![SCCM-IIS-HTTP-Log-200-Messages](/Media/2014/08/SCCM-IIS-HTTP-Log-200-Messages-300x19.png)](/Media/2014/08/SCCM-IIS-HTTP-Log-200-Messages.png)
 
 Happy Hunting

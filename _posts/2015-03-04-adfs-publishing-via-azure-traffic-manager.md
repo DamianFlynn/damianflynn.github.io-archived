@@ -20,54 +20,54 @@ If you are using a Microsoft Account for your authentication, then we will need 
 
 Once the browser is open, you will need to authenticate with your account details, after which you will be provided with a link to download the setting file
 
-    
+
     PS> <strong>Get-AzurePublishSettingsFile</strong>
 
 
 Continue to download the Settings XML file, to your machine, then back on the PowerShell prompt so that we can register this account information on our workstation
 
-    
+
     PS> <strong>dir .\Downloads</strong>
-    
+
         Directory: C:\Users\Damain\Downloads
-    
+
     Mode                LastWriteTime     Length Name
     ----                -------------     ------ ----
     -a---         2/17/2015   8:55 AM       7443 2-17-2015-credentials.publishsettings
-    
-    
+
+
     PS> <strong>Import-AzurePublishSettingsFile '.\ 2-17-2015-credentials.publishsettings' –verbose</strong>
-    
+
     VERBOSE: Setting: Microsoft.Azure.Common.Extensions.Models.AzureSubscription as the default and current subscription.
     To view other subscriptions use Get-AzureSubscription
-    
-    
+
+
     Id          : d1d475c9-5a29-4a54-a36c-aa257705612f
     Name        : My Sandbox
     Environment : AzureCloud
     Account     : Cxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx4
     Properties  : {[SupportedModes, AzureServiceManagement], [Default, True]}
-    
+
     Id          : 3719257d-381a-45ca-a7aa-ea741ab966e1
     Name        : My Production
     Environment : AzureCloud
     Account     : 3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx4
     Properties  : {[SupportedModes, AzureServiceManagement]}
-    
+
 
 
 Assuming there are no issues with the XML file, we should see any subscriptions which are associated with the account presented back to us, after the file has being imported, as you can see in the above example.
 
 Next, let's check what accounts were imported as part of this process
 
-    
+
     PS> <strong>Get-AzureAccount</strong>
-    
+
     Id                                       Type        Subscriptions                          Tenants
     --                                       ----        -------------                          -------
     Cxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx4 Certificate d1d475c9-xxxx-xxxx-xxxx-xxxxxxxx612f
     3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx4 Certificate 3719257d-xxxx-xxxx-xxxx-xxxxxxxx66e1
-    
+
 
 
 
@@ -83,9 +83,9 @@ Setting up the Azure Traffic Manager is quite trivial, all we need to know is th
 
 As azure is distributed, we have the ability to take into account geo-balancing with our implementation, educating Azure of where or services are hosted, in relation to the Azure points of presence over the globe. To determine the current locations of Azure we can use the following PowerShell commands
 
-    
+
     PS> <strong>get-azurelocation | select Name</strong>
-    
+
     Name
     ----
     West Europe
@@ -101,7 +101,7 @@ As azure is distributed, we have the ability to take into account geo-balancing 
     Japan West
     Japan East
     Brazil South
-    
+
 
 
 
@@ -113,7 +113,7 @@ We will begin by selecting the Azure Subscription we will be adding this service
 
 To select your subscription which you are going to work with, we can start with the simple PowerShell command
 
-    
+
     PS> <strong>Select-AzureSubscription -SubscriptionName "My Production"
     </strong>
 
@@ -127,7 +127,7 @@ We will continue to manage the Traffic Manager from PowerShell, as the current W
 
 While creating a new Traffic Manager Service, we begin with a Profile which we will name with a friendly label to help identify the profile, in addition we will then define what the service will be published as (the domain name), the Load Balancing Method to use, a TTL for the service, and how to validate the keep alive on the endpoints of the service.
 
-    
+
     PS> <strong>$profile = New-AzureTrafficManagerProfile -Name "Production ADFS" -DomainName "mysts.trafficmanager.net" -LoadBalancingMethod "Performance" -Ttl 30 -MonitorProtocol "Http" -MonitorPort 80 -MonitorRelativePath "/adfs/probe"
     </strong>
 
@@ -136,34 +136,34 @@ In the example above the following options have being selected to support ADFS a
 
 
 
-	
+
   * Name: Production ADFS
 
-	
+
   * Domain Name: mysts.trafficmanager.net
 
-	
+
   * Load Balancing Method: Performance
 
-	
+
   * TTL: 30 seconds
 
-	
-  * 
+
+  *
 
 
 Monitoring
 
 
 
-	
+
     * Protocol: HTTP
 
-	
+
     * TCP Port: 80
 
-	
-    * 
+
+    *
 
 
 Relative Path: /adfs/probe
@@ -178,20 +178,20 @@ _
 
 We can check the new profile has been added, using the following command
 
-    
+
     PS> <strong>Get-AzureTrafficManagerProfile</strong>
-    
+
     Name                  DomainName                          Status
     ----                  ----------                          ------
     Production ADFS       mysts.trafficmanager.net            Enabled
-    
+
 
 
 To get specific details, we can just look at the values which have been returned to our handling variable, which was called $profile
 
-    
+
     PS> <strong>$profile</strong>
-    
+
     TimeToLiveInSeconds : 300
     MonitorRelativePath : /
     MonitorPort         : 80
@@ -202,7 +202,7 @@ To get specific details, we can just look at the values which have been returned
     Name                : Production ADFS
     DomainName          : mysts.trafficmanager.net
     Status              : Enabled
-    
+
 
 
 
@@ -214,9 +214,9 @@ With the service now registered, we can begin with the process of adding the end
 
 Adding external endpoints is possible only from PowerShell. The following command will allow us to add an endpoint to the profile, set its status as enabled, define the domain name of the service which we are adding, for example 'adfs-node1.diginerve.net', indicating the location of where we are hosting this service relative to the Azure locations.
 
-    
+
     PS> <strong>Add-AzureTrafficManagerEndpoint -TrafficManagerProfile $Profile -Status "Enabled" -Type "Any" -DomainName "adfs-node1.diginerve.net" -Location "East US"</strong>
-    
+
     TimeToLiveInSeconds : 300
     MonitorRelativePath : /adfs/probe
     MonitorPort         : 80
@@ -227,14 +227,14 @@ Adding external endpoints is possible only from PowerShell. The following comman
     Name                : Production ADFS
     DomainName          : mysts.trafficmanager.net
     Status              : Enabled
-    
+
 
 
 It is important to note that this change is not actually deployed to Azure Traffic Manager yet, but instead staged on your PowerShell session. This allows us to add multiple endpoints, and check the configuration is correct, by inspecting the variable's values, for example the following allows us to look closer at the Endpoints.
 
-    
+
     PS> <strong>$Profile.Endpoints</strong>
-    
+
     DomainName        : adfs-node1.diginerve.net
     Location          : East US
     Type              : Any
@@ -242,7 +242,7 @@ It is important to note that this change is not actually deployed to Azure Traff
     MonitorStatus     : Online
     Weight            : 1
     MinChildEndpoints :
-    
+
 
 
 
@@ -252,9 +252,9 @@ It is important to note that this change is not actually deployed to Azure Traff
 
 When we are ready to proceed with the publishing of the new settings, all we need to do is pass this details to the Set Azure Traffic Manager Profile command, as illustrated below
 
-    
+
     PS> <strong>$Profile | Set-AzureTrafficManagerProfile -verbose</strong>
-    
+
     TimeToLiveInSeconds : 300
     MonitorRelativePath : /adfs/probe
     MonitorPort         : 80
@@ -265,7 +265,7 @@ When we are ready to proceed with the publishing of the new settings, all we nee
     Name                : Production ADFS
     DomainName          : mysts.trafficmanager.net
     Status              : Enabled
-    
+
 
 
 
@@ -275,16 +275,16 @@ When we are ready to proceed with the publishing of the new settings, all we nee
 
 Finally, we will loop back to Azure, and ask our PowerShell session to go back to Azure and query the current state of the traffic manager configuration.
 
-    
+
     PS> <strong>$Profile = Get-AzureTrafficManagerProfile -Name “Production ADFS”
     </strong>
 
 
 And as before we can now inspect the values in the variable as returned from Azures Traffic Manager
 
-    
+
     PS> <strong>$Profile</strong>
-    
+
     TimeToLiveInSeconds : 300
     MonitorRelativePath : /adfs/probe
     MonitorPort         : 80
@@ -295,7 +295,7 @@ And as before we can now inspect the values in the variable as returned from Azu
     Name                : Production ADFS
     DomainName          : mysts.trafficmanager.net
     Status              : Enabled
-    
+
 
 
 Now, that was pretty easy right!

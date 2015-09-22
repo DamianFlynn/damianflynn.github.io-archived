@@ -14,13 +14,13 @@ tags:
 - WS/SC
 ---
 
-Year 3, and we are ready for off. This year see’s no less than 3 independent conferences focused on the latest and greatest technologies from Microsoft Windows and System Center. [![SCULogo](http://blogstorage.damianflynn.com/wordpress/2014/02/SCULogo_thumb.png)](http://blogstorage.damianflynn.com/wordpress/2014/02/SCULogo.png)
+Year 3, and we are ready for off. This year see’s no less than 3 independent conferences focused on the latest and greatest technologies from Microsoft Windows and System Center. [![SCULogo](/Media/2014/02/SCULogo_thumb.png)](/Media/2014/02/SCULogo.png)
 
 Today is the day the first of these amazing conferences launches, and I am going to be one of the 2000+ virtual attendees to tune in for the 8 hours of amazing content, which for the curious can be located right here: [http://www.systemcenteruniverse.com/agenda.htm](http://www.systemcenteruniverse.com/agenda.htm)
 
 Heading today's sessions is the amazing Kent Agerlund, with an free look at Configuration Manager 2012 R2. 
 
-[![SCU2014NA](http://blogstorage.damianflynn.com/wordpress/2014/02/SCU2014NA_thumb.jpg)](http://blogstorage.damianflynn.com/wordpress/2014/02/SCU2014NA.jpg)
+[![SCU2014NA](/Media/2014/02/SCU2014NA_thumb.jpg)](/Media/2014/02/SCU2014NA.jpg)
 
 Of course, all this starts in the middle of our working day in Europe, and thanks to the magic of streaming, we have the option to pause and rewind, while we juggle calls, and get some real work done.
 

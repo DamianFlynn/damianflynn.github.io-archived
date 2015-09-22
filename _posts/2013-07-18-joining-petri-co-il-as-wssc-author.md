@@ -10,7 +10,7 @@ categories:
 - Blog
 ---
 
-[![petrimainlogo](http://blogstorage.damianflynn.com/wordpress/2014/08/petrimainlogo.gif)](http://blogstorage.damianflynn.com/wordpress/2014/08/petrimainlogo.gif)As we spend time, fine turning our support mechanisms, one of the go-to locations which I spent a lot of time in my early years leveraging was the somewhat infamous “Petri.co.il IT Knowledgebase”.
+[![petrimainlogo](/Media/2014/08/petrimainlogo.gif)](/Media/2014/08/petrimainlogo.gif)As we spend time, fine turning our support mechanisms, one of the go-to locations which I spent a lot of time in my early years leveraging was the somewhat infamous “Petri.co.il IT Knowledgebase”.
 
 We, now I am about to announce something which I never  expected to announce, but I am delighted to be joining the authoring team, with sole focus on Windows Server / System Center.
 

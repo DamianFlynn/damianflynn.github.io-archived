@@ -70,7 +70,7 @@ The Nexus 1000v is composed of two components, mapping from the modular physical
 
 
 
-[![030613_1421_CiscoNexus11](http://blogstorage.damianflynn.com/wordpress/2014/08/030613_1421_CiscoNexus11.png)](http://blogstorage.damianflynn.com/wordpress/2014/08/030613_1421_CiscoNexus11.png)
+[![030613_1421_CiscoNexus11](/Media/2014/08/030613_1421_CiscoNexus11.png)](/Media/2014/08/030613_1421_CiscoNexus11.png)
 
 
 
@@ -95,7 +95,7 @@ Regardless of your environments side, you need to consider the Nexus 1000v as co
 The Nexus 1000v will be available in 2 Editions, the following table illustrates the cost and feature comparison
 
 
-[![030613_1421_CiscoNexus12](http://blogstorage.damianflynn.com/wordpress/2014/08/030613_1421_CiscoNexus12.png)](http://blogstorage.damianflynn.com/wordpress/2014/08/030613_1421_CiscoNexus12.png)
+[![030613_1421_CiscoNexus12](/Media/2014/08/030613_1421_CiscoNexus12.png)](/Media/2014/08/030613_1421_CiscoNexus12.png)
 
 
 
