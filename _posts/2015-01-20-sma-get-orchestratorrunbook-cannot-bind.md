@@ -7,7 +7,7 @@ slug: sma-get-orchestratorrunbook-cannot-bind
 title: 'SMA: Get-OrchestratorRunbook Cannot Bind'
 wordpress_id: 6031
 categories:
-- Automation
+- Tutorial
 tags:
 - Automation
 - Powershell
