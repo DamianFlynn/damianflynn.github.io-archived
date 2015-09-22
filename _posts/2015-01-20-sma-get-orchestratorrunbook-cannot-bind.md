@@ -100,7 +100,7 @@ _
 
 From the **Options **menu, we simple need to select the option **Flush Web Service Cache **and then select the appropriate option for rebuilding the ODATA endpoint, personally I will select **Full Re-build. **This will take a few moments depending on the size and complexity of our Orchestrator environment; but once complete a popup will be presented to confirm the action is done.
 
-![](Media/2015/01/012015_0917_SMAGetOrche3.png)
+![](/Media/2015/01/012015_0917_SMAGetOrche3.png)
 
 Now, finally, we can loop back and run our test function again. Assuming everything has worked out, we should now be able to locate the runbook, and expose its parameter's
 
