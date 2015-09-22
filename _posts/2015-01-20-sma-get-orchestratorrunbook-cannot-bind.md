@@ -21,11 +21,11 @@ As you create and publish Runbooks in SMA, some of these may require to execute 
 
 The only tell tail sign is visible in the history log for the Workflow which is failing, with this real ugly message appearing
 
-![](Media/2015/01/012015_0917_SMAGetOrche1.png)
+![](/Media/2015/01/012015_0917_SMAGetOrche1.png)
 
 The source of this error is the SMA command **Get-OrchestratorRunbook **which in our workflow would be defined as similar to line 28 in the sample below.
 
-![](Media/2015/01/012015_0917_SMAGetOrche2.png)
+![](/Media/2015/01/012015_0917_SMAGetOrche2.png)
 
 So, what is the issue? All the parameter's are correct –
 
