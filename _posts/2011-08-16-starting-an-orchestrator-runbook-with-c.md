@@ -37,7 +37,7 @@ To keep this simple, I only have the one Runbook server, so we will ignore the o
 
 So, for this demo, In the Runbook Designer, I created a very simple book, which has no input parameters, and called it **ToggleSpooler.** As you can see this is a very simple flow which toggles the running state of the spooler service on the host computer; just perfect for our needs.
 
-[![image_thumb7](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb7_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb7.png)
+[![image_thumb7](/Media/2014/02/image_thumb7_thumb.png)](/Media/2014/02/image_thumb7.png)
 
 ## SCOrchestrator Helper Class
 
@@ -242,7 +242,7 @@ When we run the Runbook this time, we can see that we have a match and the new j
 
 
 
-[![image_thumb8](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb8_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb8.png)
+[![image_thumb8](/Media/2014/02/image_thumb8_thumb.png)](/Media/2014/02/image_thumb8.png)
 
 
 

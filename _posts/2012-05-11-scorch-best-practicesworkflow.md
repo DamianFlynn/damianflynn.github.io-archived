@@ -27,7 +27,7 @@ One pretty neat option offered in almost all the activities is the ability to de
 
 Illustrating the reasons is trivial – consider the Developer of the initial Runbook finding that they required some special credentials to access a resource; Ingenuity kicks in and before you know it, we just provided the credentials of a service account or worse our own, but hey presto the Runbook works now…. we have all done it, so no frowns! You know what happens next… Dude leaves, Password expires, Stuff stops working…
 
-[![image_thumb11](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb11_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb111.png)
+[![image_thumb11](/Media/2014/02/image_thumb11_thumb.png)](/Media/2014/02/image_thumb111.png)
 
 So, in plain english - the default is a default for a reason; and recommend that we keep it that way.
 
@@ -45,7 +45,7 @@ The total size of data allowed on the pipe line depends on a number of factors, 
 
 ## Runbook Logging
 
-[![image_thumb12](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb12_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb121.png)
+[![image_thumb12](/Media/2014/02/image_thumb12_thumb.png)](/Media/2014/02/image_thumb121.png)
 
 On the properties of the Runbook, be sure you pay attention to the **Logging **tab, and its contained options of **Store Activity-specific Published Data** and **Store Common Published Data**.
 
@@ -61,7 +61,7 @@ You should also be aware, that enabled, these will generate a lot of data, so do
 
 We will cover how to structure Runbook’s in another post, but for now the “Top Level” or Master Runbook’s which you create for each of your automations should also have the **Event Notifications** tab configured, so that **Report if the Runbook fails to run **option is enabled.
 
-[![image_thumb13](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb13_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb131.png)
+[![image_thumb13](/Media/2014/02/image_thumb13_thumb.png)](/Media/2014/02/image_thumb131.png)
 
 ## Logging to a Database
 

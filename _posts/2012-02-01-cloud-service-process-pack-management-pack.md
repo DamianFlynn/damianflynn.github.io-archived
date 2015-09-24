@@ -21,7 +21,7 @@ How To Figure out the Service Manager Dependencies
 
 While testing out the Cloud Service process pack, I encountered a dependency issue during the installation of the pack on my Service Manager 2012 server, with a nice message telling me that the VMM Discovery Management Pack in Service Manager was missing.
 
-[![image_thumb](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb_thumb2.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb10.png)
+[![image_thumb](/Media/2014/02/image_thumb_thumb2.png)](/Media/2014/02/image_thumb10.png)
 
 The fix for this is pretty simple, load the missing Management pack!
 

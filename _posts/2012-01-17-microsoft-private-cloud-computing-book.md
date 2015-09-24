@@ -25,7 +25,7 @@ Today – during the [announcement](http://www.microsoft.com/business/events/en-
 
 Aidan writes the introductory chapters on Private Cloud, Hans deals with the Fabric Management (Servers, Storage, Network), Patrick explains the Service Management (VMM Library, Service Modelling) and Damian focuses on Private Cloud Solutions (VMM Services, Self-Service, App Controller).
 
-[![PrivateCloudComputingBook](http://172.21.10.63:84/wp-content/uploads/2014/02/PrivateCloudComputingBook_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/PrivateCloudComputingBook.png)
+[![PrivateCloudComputingBook](/Media/2014/02/PrivateCloudComputingBook_thumb.png)](/Media/2014/02/PrivateCloudComputingBook.png)
 
 We also would like to recognise and acknowledge the team at [INOVATIV](http://www.inovativ.nl/) as well as [XS4ALL](http://www.xs4all.nl/consument/?campaignid=gad:branding:sea&gclid=CPvwnrbN160CFQGGDgodwxHflw) (Joey Hofstede, Alexander Rijnbeek) who have have helped us tremendously, by they offered us a remotely accessible lab including HP Blade Servers, HP EVA storage and lots of capacity to test all new VMM 2012 functionality.
 

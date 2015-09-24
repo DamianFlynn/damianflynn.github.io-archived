@@ -20,13 +20,13 @@ One of the first things that I like to do is enable the Auditing functions, howe
 
 The new home is _C:Program Files (x86)Microsoft System CenterOrchestrator 2012Opalis Integration ServerManagement Service_
 
-[![image](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image.png)
+[![image](/Media/2014/02/image_thumb.png)](/Media/2014/02/image.png)
 
 Just open a console session, and navigate to this folder; there we can run the **_atlc.exe_** command with the enable switch to turn on auditing, for example we would run
 
 _atlc.exe /enable_
 
-[![image_thumb1](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb1_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb1.png)
+[![image_thumb1](/Media/2014/02/image_thumb1_thumb.png)](/Media/2014/02/image_thumb1.png)
 
 After we enable this, we can run some policys/runbooks and when we go back to the file system we will now see some new audit logs.
 
@@ -56,7 +56,7 @@ Opening up the .CSV files in the audit folders will then allow us see the audit 
   * and the Name of the Policy/Runbook called
 
 
-[![image_thumb2](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb2_thumb1.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb21.png)
+[![image_thumb2](/Media/2014/02/image_thumb2_thumb1.png)](/Media/2014/02/image_thumb21.png)
 
 A new log is created for every 200Mb of data stored.
 

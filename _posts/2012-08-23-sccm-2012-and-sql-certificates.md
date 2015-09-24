@@ -57,7 +57,7 @@ My guess is that this is the SQL server related to the instance which this site 
 
 
 
-[![082212_1444_SCCM2012and1](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1444_SCCM2012and1_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1444_SCCM2012and1.png)
+[![082212_1444_SCCM2012and1](/Media/2014/02/082212_1444_SCCM2012and1_thumb.png)](/Media/2014/02/082212_1444_SCCM2012and1.png)
 
 
 
@@ -84,7 +84,7 @@ On the SQL Server
 
   * Expand the _SQL Server Network Configuration _node, and from here open the properties for the SQL Instance we are targeting. 
 
-  * [![082212_1444_SCCM2012and2](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1444_SCCM2012and2_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1444_SCCM2012and2.png) 
+  * [![082212_1444_SCCM2012and2](/Media/2014/02/082212_1444_SCCM2012and2_thumb.png)](/Media/2014/02/082212_1444_SCCM2012and2.png) 
 
   * On the **Protocols for ServerName** dialog, select the _Certificates_ tab to reveal the certificate which SQL is utilizing
 
@@ -106,7 +106,7 @@ Grab your can opener, also known as Regedit; and navigate to the SQL repository 
 
 
 
-[![082212_1444_SCCM2012and3](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1444_SCCM2012and3_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1444_SCCM2012and3.png)
+[![082212_1444_SCCM2012and3](/Media/2014/02/082212_1444_SCCM2012and3_thumb.png)](/Media/2014/02/082212_1444_SCCM2012and3.png)
 
 
 

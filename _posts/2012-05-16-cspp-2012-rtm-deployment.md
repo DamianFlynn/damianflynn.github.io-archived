@@ -103,14 +103,14 @@ For the integration to work, we also must import a number of Management Packs in
       * The Management packs in the catalog list box should populate with matching packs  
       * Expand the results and locate the relevant pack, in this case select **Microsoft Corporation –> Windows Server –> IIS 2008 –> Windows Server 20008 Internet Information Services 7** and click on **Add**  
       * Click on the** Add** button to add the management pack to the **Selected management packs** list 
-    * [![image_thumb14](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb14_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb141.png)  
+    * [![image_thumb14](/Media/2014/02/image_thumb14_thumb.png)](/Media/2014/02/image_thumb141.png)  
     * Click on **OK** to return to the Import Management Packs page 
   * The import list will now display the selected Management Packs we plan to install  
   * If the wizard detects issues these will be presented, with a link to Resolve in the status column  
-  * [![image_thumb15](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb15_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb151.png)  
+  * [![image_thumb15](/Media/2014/02/image_thumb15_thumb.png)](/Media/2014/02/image_thumb151.png)  
   * Clicking on** Resolve**, Presents the **Dependency Warning** dialog  
     * The missing packs will be listed in the Dialog.  
-    * [![image_thumb16](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb16_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb161.png)  
+    * [![image_thumb16](/Media/2014/02/image_thumb16_thumb.png)](/Media/2014/02/image_thumb161.png)  
     * Click on **Resolve** to have the missing packs added to the Import list and clearing the problem 
   * With all the required packs listed in the Import List, click in the **Install** button  
   * The packs will be now downloaded from the Microsoft Catalog, queued up, and finally Imported.  
@@ -126,7 +126,7 @@ Starting in Operations Manager, we will add the new Security group we will use f
   * On the **Operations Manager Administrators – User Role Properties**, in the **User role members** list, click on** Add..** to display the **Select Group** Dialog  
     * In the **Enter the object name to select** text box, enter the group we created earlier **SCVMM PRO Integration**, and then click **OK**
   * The User Role Members list will update with the new member presented, click on **OK** to save the change  
-  * [![image_thumb17](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb17_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb17.png)  
+  * [![image_thumb17](/Media/2014/02/image_thumb17_thumb.png)](/Media/2014/02/image_thumb17.png)  
 
 ## PRO Integration Account for Virtual Machine Manager
 
@@ -137,7 +137,7 @@ If you are curious
   * Launch the **Virtual Machine Manager console**, in the **Administration View**, select **Security –> User Roles**  
   * In the **User Roles** list, double click the **Administrator** role to present its properties  
   * On the **Members** page, the **Members** list will present the current accounts with privileges  
-  * [![image_thumb18](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb18_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb18.png)
+  * [![image_thumb18](/Media/2014/02/image_thumb18_thumb.png)](/Media/2014/02/image_thumb18.png)
 
 ## Enable SCVMM PRO Integration
 
@@ -150,11 +150,11 @@ We now should have all the main pre-requisites in place to allow us to enable th
     * Then check that we have **enabled** the option **Use the VMM server service account**  
     * Also** Enable** the option **Enable Performance and Resource Optimization**  
     * And **Enable** the option **Enable maintenance mode integration with Operations Manager**
-  * [![image_thumb19](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb19_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb19.png)  
+  * [![image_thumb19](/Media/2014/02/image_thumb19_thumb.png)](/Media/2014/02/image_thumb19.png)  
   * On the **Configure connection from Operations Manager to VMM** page we will create the return connection  
     * In the **User name** text box, enter the SCVMM Service account name which we decided to use, e.g. **diginervesvcSCVMM**  
     * In the **Password** text box, you know what to do! 
-  * [![image_thumb20](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb20_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb20.png)  
+  * [![image_thumb20](/Media/2014/02/image_thumb20_thumb.png)](/Media/2014/02/image_thumb20.png)  
   * On the **Confirm the settings** page, you can review the options and then click **Finish**  
   * If you select the Virtual Machine Manger Jobs View, you can monitor the progress of the new connection being created 
 
@@ -164,9 +164,9 @@ Finally, lets check that the integration is now configured and working correctly
 
   * Launch the **Virtual Machine Manager console**, in the **Administration View**, select **System Centre Settings –> Operations Manager Server**  
   * The **Operations Manager Setting** dialog is then presented, on the **Details** page, we can see the current **Connection Status** which should be **OK**
-  * [![image_thumb21](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb21_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb211.png)
+  * [![image_thumb21](/Media/2014/02/image_thumb21_thumb.png)](/Media/2014/02/image_thumb211.png)
   * On the Management Packs page we s hould also be offered the list which is currently imported into VMM  
-  * [![image_thumb22](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb22_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb221.png)  
+  * [![image_thumb22](/Media/2014/02/image_thumb22_thumb.png)](/Media/2014/02/image_thumb221.png)  
   * To test the integration is working correctly, you can click the option **Test PRO**, using the Jobs view we can verify the integration is functioning correctly. 
 
 # Service Manager Management Packs
@@ -201,7 +201,7 @@ On of the requirements of the Cloud Service Process pack is that the CMDB in SCC
 
 In the SCSM console, we will create the necessary connectors to get the Process pack installed and working, this will take a little time, and of course we need to already have the systems we plan to connect with already deployed and running the RTM version for the System Canter 2012 suite.
 
-[![image_thumb23](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb23_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb231.png)
+[![image_thumb23](/Media/2014/02/image_thumb23_thumb.png)](/Media/2014/02/image_thumb231.png)
 
 ## Orchestrator
 
@@ -214,7 +214,7 @@ The first, connector I will create is to Orchestrator, this connector will be us
       * In the **Name** text box, enter **Orchestrator Connector**  
       * In the **Description** text box, enter **Connector from SCSM to SCO using the ODATA interface of SCO 2012 **
       * **Enable** to the check box **Enable this connector**  
-      * [![image_thumb24](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb24_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb241.png)
+      * [![image_thumb24](/Media/2014/02/image_thumb24_thumb.png)](/Media/2014/02/image_thumb241.png)
     * On the** Connection** page we will provide details for the ODATA service  
       * In the **Orchestrator Web Service URL** text box enter the URL, e.g. [**http://scorch2012:81/orchestrator2012/Orchestrator.svc/**](http://scorch2012:81/orchestrator2012/Orchestrator.svc/)  
       * For the **Run As Account**, I will create a new one that has permissions to the web service, Click on the **New…** button to launch the Run As Account Dialog  
@@ -225,20 +225,20 @@ The first, connector I will create is to Orchestrator, this connector will be us
         * In the **User name** text box enter the name of the account which has access, e.g. _svcSCOrch2012_  
         * in the **Password** text box enter the password for the account  
         * In the **Domain** drop down select the relevant domain  
-        * [![image_thumb25](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb25_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb251.png)
+        * [![image_thumb25](/Media/2014/02/image_thumb25_thumb.png)](/Media/2014/02/image_thumb251.png)
       * In the **Run As Account** drop down, our new account should be listed **SC Orchestrator Integration Access**  
       * Click on the **Test Connection **button, to have SCSM try to access the SCO interface, you should get a popup confirming the connection.  
-      * [![image_thumb26](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb26_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb26.png)
+      * [![image_thumb26](/Media/2014/02/image_thumb26_thumb.png)](/Media/2014/02/image_thumb26.png)
     * On the **Sync Folder** Page  
       * On the **Select Sync Folder** tree, the **Root branch** is selected, as I am not sure where the new Runbook’s will appear, I just accept the default for now, we can come back at another time and scope this differently.  
-      * [![image_thumb27](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb27_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb27.png)
+      * [![image_thumb27](/Media/2014/02/image_thumb27_thumb.png)](/Media/2014/02/image_thumb27.png)
     * On the **Web Console** Page  
       * In the **URL** text box, enter the address of the web console, for example **http:\scorch2012**  
-      * [![image_thumb28](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb28_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb28.png)
+      * [![image_thumb28](/Media/2014/02/image_thumb28_thumb.png)](/Media/2014/02/image_thumb28.png)
     * On the **Summary** page  
       * Review that all looks as expected  
       * Finish up the wizard to have the new connector online  
-      * [![image_thumb29](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb29_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb29.png)
+      * [![image_thumb29](/Media/2014/02/image_thumb29_thumb.png)](/Media/2014/02/image_thumb29.png)
 
 ## Virtual Machine Manager
 
@@ -251,7 +251,7 @@ Next connector is the VMM Connection, this will allow us to sync the Clouds, Net
       * In the **Name** text box, enter **Virtual Machine Manager Connector**  
       * In the **Description** text box, enter **Connector from SCSM to VMM 2012 **
       * **Enable** to the check box **Enable this connector**  
-      * [![image_thumb30](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb30_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb30.png)
+      * [![image_thumb30](/Media/2014/02/image_thumb30_thumb.png)](/Media/2014/02/image_thumb30.png)
     * On the** Connection** page we will provide details for the VMM service  
       * In the **Server Name** text box enter the name of the VMM service, e.g. **scvmm2012.diginerve.net**  
       * For the **Run As Account**, I will create a new one that has permissions to the web service, Click on the **New…** button to launch the Run As Account Dialog  
@@ -262,14 +262,14 @@ Next connector is the VMM Connection, this will allow us to sync the Clouds, Net
         * In the **User name** text box enter the name of the account which has access, e.g. _svcSCVMM_  
         * in the **Password** text box enter the password for the account  
         * In the **Domain** drop down select the relevant domain  
-        * [![image_thumb31](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb31_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb311.png)
+        * [![image_thumb31](/Media/2014/02/image_thumb31_thumb.png)](/Media/2014/02/image_thumb311.png)
       * In the **Run As Account** drop down, our new account should be listed **SC Virtual Machine Manager Integration Access**  
       * Click on the **Test Connection **button, to have SCSM try to access the SCVMM interface, you should get a popup confirming the connection.  
-      * [![image_thumb32](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb32_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb321.png)
+      * [![image_thumb32](/Media/2014/02/image_thumb32_thumb.png)](/Media/2014/02/image_thumb321.png)
     * On the **Summary** page  
       * Review that all looks as expected  
       * Finish up the wizard to have the new connector online  
-      * [![image_thumb33](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb33_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb331.png)
+      * [![image_thumb33](/Media/2014/02/image_thumb33_thumb.png)](/Media/2014/02/image_thumb331.png)
 
 ## Operations Machine Manager
 
@@ -282,7 +282,7 @@ Next connector is the Operations Manager Connection, this will allow us to sync 
       * In the **Name** text box, enter **Operations Manager Manager CI Connector**  
       * In the **Description** text box, enter **Connector from SCSM to SCOM 2012 for Configuration Items**  
       * **Enable** to the check box **Enable this connector**  
-      * [![image_thumb34](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb34_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb341.png)
+      * [![image_thumb34](/Media/2014/02/image_thumb34_thumb.png)](/Media/2014/02/image_thumb341.png)
     * On the** Connection** page we will provide details for the VMM service  
       * In the **Server Name** text box enter the name of the VMM service, e.g. **scom2012.diginerve.net**  
       * For the **Run As Account**, I will create a new one that has permissions to the web service, Click on the **New…** button to launch the Run As Account Dialog  
@@ -293,21 +293,21 @@ Next connector is the Operations Manager Connection, this will allow us to sync 
         * In the **User name** text box enter the name of the account which has access, e.g. the account we created for PRO integration a little earlier _svcSCVMMpro_  
         * in the **Password** text box enter the password for the account  
         * In the **Domain** drop down select the relevant domain  
-        * [![image_thumb35](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb35_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb351.png)
+        * [![image_thumb35](/Media/2014/02/image_thumb35_thumb.png)](/Media/2014/02/image_thumb351.png)
       * In the **Run As Account** drop down, our new account should be listed **SC Virtual Machine Manager Integration Access**  
       * Click on the **Test Connection **button, to have SCSM try to access the SCVMM interface, you should get a popup confirming the connection.  
-      * [![image_thumb36](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb36_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb361.png)
+      * [![image_thumb36](/Media/2014/02/image_thumb36_thumb.png)](/Media/2014/02/image_thumb361.png)
     * On the **Management Packs** page,  
       * **Enable** the Check box Select **ALL**.  
       * Ensure that in this list you can see the management pack **Microsoft.SystemCenter.VirtualMachineManager.2012.Discovery**, this will only be presented if you have it imported into both SCOM and SCSM; which if you have being following the steps will be the case  
-      * [![image_thumb37](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb37_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb37.png)
+      * [![image_thumb37](/Media/2014/02/image_thumb37_thumb.png)](/Media/2014/02/image_thumb37.png)
     * On the **Schedule** page  
       * Set a **Synchronize** time which is suitable for your installation, for example I am selecting **5am**  
-      * [![image_thumb38](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb38_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb38.png)
+      * [![image_thumb38](/Media/2014/02/image_thumb38_thumb.png)](/Media/2014/02/image_thumb38.png)
     * On the **Summary** page  
       * Review that all looks as expected  
       * Finish up the wizard to have the new connector online  
-      * [![image_thumb39](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb39_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb39.png)
+      * [![image_thumb39](/Media/2014/02/image_thumb39_thumb.png)](/Media/2014/02/image_thumb39.png)
 
 # Cloud Service Runbook’s
 
@@ -316,44 +316,44 @@ We can now proceed to import the Cloud Service Runbooks, I normally run this par
 **Before you start** – Be 100% sure that you have already installed the SERVICE MANAGER 2010 Integration pack _(and no that is not a Typo, even though we are working with Service Manager 2012, this pack is still using the older 2010 Integrations!! The installation will work, but the activities will not if you do not have this pack installed.)_
 
   * From the installation media, launch the **Setup.exe** tool, which will offer the options splash screen, Choose **Cloud Services Runbooks**  
-  * [![image_thumb40](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb40_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb40.png)  
+  * [![image_thumb40](/Media/2014/02/image_thumb40_thumb.png)](/Media/2014/02/image_thumb40.png)  
   * On the **Product Registration** page, provide the normal details and **Accept the agreement**  
-  * [![image_thumb41](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb41_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb411.png)  
+  * [![image_thumb41](/Media/2014/02/image_thumb41_thumb.png)](/Media/2014/02/image_thumb411.png)  
   * On the **System Check Results** page, we are expecting everything to be good  
-  * [![image_thumb42](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb42_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb421.png)  
+  * [![image_thumb42](/Media/2014/02/image_thumb42_thumb.png)](/Media/2014/02/image_thumb421.png)  
   * On the **Configuration System Center Orchestrator account and Database** Page  
     * Supply the Orchestrator Account which has privileges to create Runbook’s and then use the Test Credentials button to validate it works  
     * Identify the Orchestrator Database server, its instance and Database name 
-  * [![image_thumb43](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb43_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb431.png)
+  * [![image_thumb43](/Media/2014/02/image_thumb43_thumb.png)](/Media/2014/02/image_thumb431.png)
   * On the **Co nfigure the System Center Orchestrator Connections** page  
     * We need to provide the name of the **SCSM connection name** we created to Orchestrator earlier, for example **Orchestrator Connector**
-  * [![image_thumb44](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb44_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb44.png)  
+  * [![image_thumb44](/Media/2014/02/image_thumb44_thumb.png)](/Media/2014/02/image_thumb44.png)  
   * The **Installation Summary** page will then be presented, Review the settings, and then Click **Install**  
-  * [![image_thumb45](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb45_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb45.png)  
+  * [![image_thumb45](/Media/2014/02/image_thumb45_thumb.png)](/Media/2014/02/image_thumb45.png)  
   * After a few moments, the **Setup Completed successfully** page should be presented, and we can click **Close** to finish the process  
-  * [![image_thumb46](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb46_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb46.png)
+  * [![image_thumb46](/Media/2014/02/image_thumb46_thumb.png)](/Media/2014/02/image_thumb46.png)
 
 If you are curious, you can now run the Orchestrator Runbook Designer, and once connected, you should see the new Runbooks which were just created.
 
-[![image_thumb47](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb47_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb47.png)
+[![image_thumb47](/Media/2014/02/image_thumb47_thumb.png)](/Media/2014/02/image_thumb47.png)
 
 # Cloud Service Process Pack
 
 Finally, lets install the pack, as we should have all the base requirements now in place, lets add the features to Service Manager 2012
 
   * From the installation media, launch the **Setup.exe** tool, which will offer the options splash screen, Choose **Cloud Services Process Pack**  
-  * [![image_thumb48](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb48_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb48.png)  
+  * [![image_thumb48](/Media/2014/02/image_thumb48_thumb.png)](/Media/2014/02/image_thumb48.png)  
   * The** System Check Results** page should be all green assuming we have done all the work correctly  
-  * [![image_thumb49](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb49_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb49.png)  
+  * [![image_thumb49](/Media/2014/02/image_thumb49_thumb.png)](/Media/2014/02/image_thumb49.png)  
   * As there are no additional configurations required, review the **Installation Summary** page, and click **Install**  
-  * [![image_thumb50](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb50_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb50.png)  
+  * [![image_thumb50](/Media/2014/02/image_thumb50_thumb.png)](/Media/2014/02/image_thumb50.png)  
   * And, after a few minutes, the **Setup completed successfully** page should be offered up. Click **Close** to finish up  
-  * [![image_thumb51](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb51_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb511.png)
+  * [![image_thumb51](/Media/2014/02/image_thumb51_thumb.png)](/Media/2014/02/image_thumb511.png)
 
 And now, lets see did it work
 
 Launch a fresh copy of the Service Manager 2012 Console, and all going to plan, we should now have a new Node in the Administration View for Cloud Services
 
-[![image_thumb52](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb52_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb521.png)
+[![image_thumb52](/Media/2014/02/image_thumb52_thumb.png)](/Media/2014/02/image_thumb521.png)
 
 Enjoy

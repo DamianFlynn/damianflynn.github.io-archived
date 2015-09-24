@@ -32,19 +32,19 @@ Launch the **ADSI Edit **tool (_Start_ –> _Run_ –> _adsiedit.msc_), and Conn
 
 Expand the _Default Naming Context_ –> _DC=xxx,DC=xxx,DC=xxx_ branch. Locate and right click on the container named _CN=System_, on the context menu select _New_ -> _Object_
 
-[![image_thumb](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb_thumb4.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb15.png)
+[![image_thumb](/Media/2014/02/image_thumb_thumb4.png)](/Media/2014/02/image_thumb15.png)
 
 The _Create Object _dialog will be presented, in the _Select a class_ list, choose the option _Container_ and click _Next_
 
-[![image_thumb1](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb1_thumb4.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb16.png)
+[![image_thumb1](/Media/2014/02/image_thumb1_thumb4.png)](/Media/2014/02/image_thumb16.png)
 
 On the second page, in the _Value_ text box, enter **_System Management_** and then click on _Next_
 
-[![image_thumb2](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb2_thumb5.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb25.png)
+[![image_thumb2](/Media/2014/02/image_thumb2_thumb5.png)](/Media/2014/02/image_thumb25.png)
 
 Finally, we just need to click on _Finish_ to complete creating the new container.
 
-[![image_thumb3](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb3_thumb6.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb36.png)
+[![image_thumb3](/Media/2014/02/image_thumb3_thumb6.png)](/Media/2014/02/image_thumb36.png)
 
 You can now close the **ADSI Edit **tool
 
@@ -54,23 +54,23 @@ Launch the **Active Directory Users and Computers **tool (_Start_ –> _Run_ –
 
 Expand the _System_ branch. Locate and right click on the container named _System Management_, on the context menu select _Delegate Control…_
 
-[![image_thumb4](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb4_thumb3.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb43.png)
+[![image_thumb4](/Media/2014/02/image_thumb4_thumb3.png)](/Media/2014/02/image_thumb43.png)
 
 The Delegation of Control Wizard is presented, click _Next_. On the _User or Groups_ page, click _Add_.
 
-[![image_thumb5](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb5_thumb3.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb54.png)
+[![image_thumb5](/Media/2014/02/image_thumb5_thumb3.png)](/Media/2014/02/image_thumb54.png)
 
 In the _Browse Dialog_, click the button _Object Types_, select _Computers_ and click _OK_. In the server name field enter the names of the System Centre 2012 servers which will be installed and configured as the Site Servers, then click on _Check Names_, and finally click _OK_. Back on the _User or Group_ page click _Next_
 
-[![image_thumb6](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb6_thumb2.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb62.png)
+[![image_thumb6](/Media/2014/02/image_thumb6_thumb2.png)](/Media/2014/02/image_thumb62.png)
 
 On the _Tasks to Delegate_ page, Choose _Create a Custom Task to Delegate_, click _Next_
 
-[![image_thumb7](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb7_thumb2.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb72.png)
+[![image_thumb7](/Media/2014/02/image_thumb7_thumb2.png)](/Media/2014/02/image_thumb72.png)
 
 On the _Active Directory Object Type_ page, select the option _This folder, existing objects in this folder and creation of new objects in this folder_ and click _Next_
 
-[![image_thumb8](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb8_thumb2.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb82.png)
+[![image_thumb8](/Media/2014/02/image_thumb8_thumb2.png)](/Media/2014/02/image_thumb82.png)
 
 On the _Permissions_ page, enable the check box next to all 3 permission types
 
@@ -80,11 +80,11 @@ On the _Permissions_ page, enable the check box next to all 3 permission types
 
 In the _permissions_ list box, _enable_ the check box _FULL CONTROL_, then click _Next_
 
-[![image_thumb9](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb9_thumb1.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb92.png)
+[![image_thumb9](/Media/2014/02/image_thumb9_thumb1.png)](/Media/2014/02/image_thumb92.png)
 
 And Finally, read the summary, and click on _Finish_
 
-[![image_thumb10](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb10_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb101.png)
+[![image_thumb10](/Media/2014/02/image_thumb10_thumb.png)](/Media/2014/02/image_thumb101.png)
 
 That’s that done, now close out of ADUC.
 

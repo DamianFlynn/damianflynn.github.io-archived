@@ -20,19 +20,19 @@ One of my main focuses with Hyper-V is taking this technology and combining it w
 
 Thanks to your great help filling out the Great BIG Hyper-V Survey of 2011, today I can answer some of these questions!
 
-The first answer we need to check off, is how are we managing our Hyper-V Environment; this one is very important, as this will be the base line to start from to assess what percentage of the deployments are potentially been configured as private clouds.[![image6](http://172.21.10.63:84/wp-content/uploads/2014/02/image6_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image6.png)
+The first answer we need to check off, is how are we managing our Hyper-V Environment; this one is very important, as this will be the base line to start from to assess what percentage of the deployments are potentially been configured as private clouds.[![image6](/Media/2014/02/image6_thumb.png)](/Media/2014/02/image6.png)
 
 Now, it would be very to guess that looking at t his information that over 50% of the deployments are been utilized in some for as as private cloud right, But, it might be a big shock to find that over 80% of these installations are NOT managed in any form of a private cloud.
 
 In the remaining 20%, the implementation of Cloud infrastructure has been nicely broken into four categories; with the real surprise turning out to reveal that 30% of these are already using SCVMM 2012 Beta to provide cloud services. If we roll up these numbers further, just 17% of these clouds are not using a version of Microsoft's SCVMM technology
 
-[![image6_thumb](http://172.21.10.63:84/wp-content/uploads/2014/02/image6_thumb_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image6_thumb1.png)
+[![image6_thumb](/Media/2014/02/image6_thumb_thumb.png)](/Media/2014/02/image6_thumb1.png)
 
 There are 2 questions now that need to be considered, what happens next for the environments using the Microsoft technologies, and of course what will everyone else do?
 
 ## 71% will adopt SCVMM 2012 
 
-Well, if the numbers don’t lie, then SCVMM 2012 is going to be a very popular product, Of all the responses 71% will adopt SCVMM 2012 for their private cloud framework. with 16.5% planning to still implement the Self Service Portal Accelerator… Its going to be interesting to see just how that one pans out…[![image15_thumb](http://172.21.10.63:84/wp-content/uploads/2014/02/image15_thumb_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image15_thumb.png)
+Well, if the numbers don’t lie, then SCVMM 2012 is going to be a very popular product, Of all the responses 71% will adopt SCVMM 2012 for their private cloud framework. with 16.5% planning to still implement the Self Service Portal Accelerator… Its going to be interesting to see just how that one pans out…[![image15_thumb](/Media/2014/02/image15_thumb_thumb.png)](/Media/2014/02/image15_thumb.png)
 
 That is a whole new world of clouds in the sky, and with that will be a collection of different challenges; but what is interesting here is that concerns which exist with deploying clouds. The big 3 here accounting for over 16% each include the all time favourite Licensing, Meeting SLA’s and Security concerns.
 

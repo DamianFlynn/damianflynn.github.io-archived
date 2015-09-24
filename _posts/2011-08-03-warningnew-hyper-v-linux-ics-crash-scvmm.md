@@ -31,6 +31,6 @@ And, since its Linux, lets not reboot – lets just stop the daemon:
 
 **/etc/init.d/hv_kvp_daemon stop**
 
-[![image_thumb](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb5.png)
+[![image_thumb](/Media/2014/02/image_thumb_thumb.png)](/Media/2014/02/image_thumb5.png)
 
 Microsoft have also posted a Fast Article on this here [http://support.microsoft.com/default.aspx?scid=kb;EN-US;2586286](http://support.microsoft.com/default.aspx?scid=kb;EN-US;2586286)

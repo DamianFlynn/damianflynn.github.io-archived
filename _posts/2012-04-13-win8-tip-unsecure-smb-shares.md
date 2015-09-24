@@ -20,6 +20,6 @@ As normal a fix is not to hard, and in this case, its a registry setting on the 
 
 **Set-ItemProperty -Path "HKLM:SYSTEMCurrentControlSetServicesLanmanWorkstationParameters" -RequireSecureNegotiate -Value 0 –Force**
 
-[![image_thumb2](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb2_thumb4.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb24.png)
+[![image_thumb2](/Media/2014/02/image_thumb2_thumb4.png)](/Media/2014/02/image_thumb24.png)
 
 No reboot required, it just works 

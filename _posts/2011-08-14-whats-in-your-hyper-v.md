@@ -22,7 +22,7 @@ So, in collaboration with my Fellow MVP’s, [Aidan Finn](http://www.aidanfinn.c
 
 The survey is designed to help us understand how you currently employ virtualisation using Microsoft's Hyper-V, including your Hyper-V Environment, your Installation Practices, how you manage the environment, and your perspective on private cloud. All the questions are very high level designed to help us draw some conclusions on how we as a community use the technology's we have currently, and identify what we all see as the good and the evil. And permit us to go back on your behalf as a community to clearly highlight the real weaknesses in the product we would like to have some attention focused on.
 
-[![image_thumb1](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb1_thumb1.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb11.png)
+[![image_thumb1](/Media/2014/02/image_thumb1_thumb1.png)](/Media/2014/02/image_thumb11.png)
 
 ## [The Survey](http://kwiksurveys.com/?u=BigHyperVSurvey2011)
 

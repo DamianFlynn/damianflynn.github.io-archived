@@ -31,7 +31,7 @@ After signing in you will be presented with a 3 step Wizard
 You will be required to provide your contact information which will be used by Microsoft Azure for your information and Billing related to the service
 
 </td>
-<td width="250" valign="top" >[![F11a01_Screenshot](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a01_Screenshot_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a01_Screenshot.png)
+<td width="250" valign="top" >[![F11a01_Screenshot](/Media/2014/02/F11a01_Screenshot_thumb.png)](/Media/2014/02/F11a01_Screenshot.png)
 </td></tr> <tr >
 <td width="250" valign="top" >
 
@@ -40,7 +40,7 @@ You will be required to provide your contact information which will be used by M
 You subscription details will be presented, along with the Agreement for your review and acknowledgement prior to continuing
 
 </td>
-<td width="250" valign="top" >[![F11a02_Screenshot](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a02_Screenshot_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a02_Screenshot.png)
+<td width="250" valign="top" >[![F11a02_Screenshot](/Media/2014/02/F11a02_Screenshot_thumb.png)](/Media/2014/02/F11a02_Screenshot.png)
 </td></tr> <tr >
 <td width="250" valign="top" >
 
@@ -49,19 +49,19 @@ You subscription details will be presented, along with the Agreement for your re
 Now we have the opportunity to provide our Credit Card details for the billings associated to our new Subscription
 
 </td>
-<td width="250" valign="top" >[![F11a03_Screenshot](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a03_Screenshot_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a03_Screenshot.png)
+<td width="250" valign="top" >[![F11a03_Screenshot](/Media/2014/02/F11a03_Screenshot_thumb.png)](/Media/2014/02/F11a03_Screenshot.png)
 </td></tr></tbody></table>
 
 After your payment method has being verified your subscription will be provisioned; and you are good to go!
 
-[![F11a04_Screenshot](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a04_Screenshot_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a04_Screenshot.png)
+[![F11a04_Screenshot](/Media/2014/02/F11a04_Screenshot_thumb.png)](/Media/2014/02/F11a04_Screenshot.png)
 
 After which you will have access to the Azure Service and will be directed to the Management Page.
 
-[![F11a05_Screenshot](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a05_Screenshot_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/F11a05_Screenshot.png)
+[![F11a05_Screenshot](/Media/2014/02/F11a05_Screenshot_thumb.png)](/Media/2014/02/F11a05_Screenshot.png)
 
 You can keep a close eye on billing also from your account page
 
-[![image_thumb](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb_thumb3.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb13.png)
+[![image_thumb](/Media/2014/02/image_thumb_thumb3.png)](/Media/2014/02/image_thumb13.png)
 
 That was easy right?

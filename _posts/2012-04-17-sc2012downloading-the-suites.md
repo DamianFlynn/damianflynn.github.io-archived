@@ -19,7 +19,7 @@ As you begin to utilize this suite of tools, you will quickly realise the power 
 
 The image below will help you envision the integrations and agents which are enabled in this new suite of products.
 
-[![image_thumb3](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb3_thumb5.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb35.png)
+[![image_thumb3](/Media/2014/02/image_thumb3_thumb5.png)](/Media/2014/02/image_thumb35.png)
 
 As there are a lot of moving parts within the suite, the following links should help in locating the additional services which will enrich the SC2012 experience.
 

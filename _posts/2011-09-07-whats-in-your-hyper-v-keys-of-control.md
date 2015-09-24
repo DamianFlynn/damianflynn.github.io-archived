@@ -17,7 +17,7 @@ tags:
 
 If the next twelve months are going to be busy building clouds, then if the feedback is accurate we are going to be pretty busy, but then is that new?
 
-The real question here, is how are we going to manage these clouds? Will we need to learn new tooling, do we have to invest in software, and how much new infrastructure will need to put in place? We already know that 99% of all the Hyper-V environments are still managed by Microsoft’s own tool’s, with 60% already running Virtual Machine Manager or Essentials; though I am not so sure that Essentials will get us where we need to be.[![image_thumb3](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb3_thumb3.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb33.png)
+The real question here, is how are we going to manage these clouds? Will we need to learn new tooling, do we have to invest in software, and how much new infrastructure will need to put in place? We already know that 99% of all the Hyper-V environments are still managed by Microsoft’s own tool’s, with 60% already running Virtual Machine Manager or Essentials; though I am not so sure that Essentials will get us where we need to be.[![image_thumb3](/Media/2014/02/image_thumb3_thumb3.png)](/Media/2014/02/image_thumb33.png)
 
 But control is not restricted to just Hyper-V, Failover Clustering Manager, Essentials or even Virtual Machine Manager; there are many more products in the Microsoft Suite, and looking at the feedback we have received, Operations Manager, Configuration Manager and Data Protection Manager are already starting to show a significant presence in deployed infrastructure.
 
@@ -35,7 +35,7 @@ From an Infrastructure perspective, those of you with both Operations Manager an
 
 But what has to be the most interesting numbers for all this, is really how much you actually trust the system to manage your environment
 
-[![image_thumb5](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb5_thumb1.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb52.png)
+[![image_thumb5](/Media/2014/02/image_thumb5_thumb1.png)](/Media/2014/02/image_thumb52.png)
 
 56% of you just rely on PRO for guidance and do the work manually
 

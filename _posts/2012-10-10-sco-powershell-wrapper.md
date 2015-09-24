@@ -41,6 +41,6 @@ remove-pssession -session $session;
 
 In Context of the .NET Script Activity with the parameters passed from the pipeline, it looks like this
 
-[![101012_1338_SCOPowerShe1](http://172.21.10.63:84/wp-content/uploads/2014/02/101012_1338_SCOPowerShe1_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101012_1338_SCOPowerShe1.png)
+[![101012_1338_SCOPowerShe1](/Media/2014/02/101012_1338_SCOPowerShe1_thumb.png)](/Media/2014/02/101012_1338_SCOPowerShe1.png)
 
 One of the other benefits here, is that due to doing PS remoting, I can provide alternative credentials – but don't forget the CredSSP and double hop J

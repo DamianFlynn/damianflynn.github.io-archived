@@ -24,15 +24,15 @@ _**Disclaimer: **Now, I need to be very clear here; I am not a developer, althou
 
 Great, let’s start off the session with a nice new Project; I am going to call this **SCOrchServices** for obvious reasons
 
-[![image_thumb2](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb2_thumb2.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb22.png)
+[![image_thumb2](/Media/2014/02/image_thumb2_thumb2.png)](/Media/2014/02/image_thumb22.png)
 
-Now, let’s not waste any time at all. We are going to use the power of to tool, and create a Class to help us bind and communicate with the ODATA interface on Orchestrator. So navigate over to your **Solution Explorer** and right click on [![image_thumb3](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb3_thumb2.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb32.png) the Project Name to get the context menu. From there I need you to select the option **Add Service Reference… **
+Now, let’s not waste any time at all. We are going to use the power of to tool, and create a Class to help us bind and communicate with the ODATA interface on Orchestrator. So navigate over to your **Solution Explorer** and right click on [![image_thumb3](/Media/2014/02/image_thumb3_thumb2.png)](/Media/2014/02/image_thumb32.png) the Project Name to get the context menu. From there I need you to select the option **Add Service Reference… **
 
 This will present us with the **Add Service Reference **Dialogue, where will will type in the address of our Orchestrator 2012 Web Service. Once we have done that all we need to do next is click on the **Go** button and wait a few moments for the magic to work.
 
 **Update for RC and Newer** - the ODATA link is now at [http://servername:port/**Orchestrator2012**/Orchestrator.svc/](http://servername:port/Orchestrator2012/Orchestrator.svc/)
 
-[![image_thumb4](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb4_thumb1.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb41.png)
+[![image_thumb4](/Media/2014/02/image_thumb4_thumb1.png)](/Media/2014/02/image_thumb41.png)
 
 Once control is returned, we will now see in the Services pane the new context **OrchestratorContext** which you can expand to see all the goodies which are on offer.
 
@@ -206,7 +206,7 @@ Once that is done, we will make a variable called **runbooks** where using a sim
 
 
 
-[![image_thumb5](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb5_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb51.png)
+[![image_thumb5](/Media/2014/02/image_thumb5_thumb.png)](/Media/2014/02/image_thumb51.png)
 
 
 
@@ -226,7 +226,7 @@ So, what are you waiting for, run the program! Assuming you have no errors, and 
 
 
 
-[![image_thumb6](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb6_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb6.png)
+[![image_thumb6](/Media/2014/02/image_thumb6_thumb.png)](/Media/2014/02/image_thumb6.png)
 
 
 

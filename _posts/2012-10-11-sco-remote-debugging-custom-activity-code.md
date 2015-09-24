@@ -24,23 +24,23 @@ First, we need to get our test Orchestrator server ready, so a quick trip to the
 
   1. Once you have the tools install downloaded (its about 40Mb); launch it, and you will be greeted with its splash and the normal legal mumbo jumbo.
 
-[![101112_1620_SCORemoteDe1](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe1_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe1.png)
+[![101112_1620_SCORemoteDe1](/Media/2014/02/101112_1620_SCORemoteDe1_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe1.png)
 
   2. Hit install, and the wizard gets to work
 
-[![101112_1620_SCORemoteDe2](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe2_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe2.png)
+[![101112_1620_SCORemoteDe2](/Media/2014/02/101112_1620_SCORemoteDe2_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe2.png)
 
   3. And before you can wink, it is all done
 
-[![101112_1620_SCORemoteDe3](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe3_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe3.png)
+[![101112_1620_SCORemoteDe3](/Media/2014/02/101112_1620_SCORemoteDe3_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe3.png)
 
   4. Wasting no time, Launch your newly installed utility, and be greeted with the message that the agent is standing by awaiting further actions
 
-[![101112_1620_SCORemoteDe4](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe4_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe4.png)
+[![101112_1620_SCORemoteDe4](/Media/2014/02/101112_1620_SCORemoteDe4_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe4.png)
 
   5. Before you move on, you need to setup the security around which users can connect to the debugger. I am actually working across domains with no trust, and thus to keep my life simple – I am going to turn off security for my session. Make sure you follow the correct process for your scenario. From the **Tools** menu, select **Options** and then set the options for **No Authentication** and **Allow any user to debug**
 
-[![101112_1620_SCORemoteDe5](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe5_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe5.png)
+[![101112_1620_SCORemoteDe5](/Media/2014/02/101112_1620_SCORemoteDe5_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe5.png)
 
   6. After clicking Ok, the log will update with the changes, and a warning that this is not a safe configuration! 
 
@@ -48,33 +48,33 @@ First, we need to get our test Orchestrator server ready, so a quick trip to the
 
 In order to determine you have an issue, you will have already a test Runbook configured, and your .NET activity connected up. For my sample, I simply copy over the associated DLL files along with the PDB files from my Development systems Debug folder to this remote server. The folder looks a little like below:
 
-[![101112_1620_SCORemoteDe6](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe6_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe6.png)
+[![101112_1620_SCORemoteDe6](/Media/2014/02/101112_1620_SCORemoteDe6_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe6.png)
 
   1. From the Tools Menu, I have a configuration stored for my BitLocker IP which I plan to test
 
-[![101112_1620_SCORemoteDe7](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe7_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe7.png)
+[![101112_1620_SCORemoteDe7](/Media/2014/02/101112_1620_SCORemoteDe7_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe7.png)
 
   2. The configuration is very simple, just pointing to my DLL, selecting the connection class, and providing some details for the connection, nothing odd here
 
-[![101112_1620_SCORemoteDe8](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe8_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe8.png)
+[![101112_1620_SCORemoteDe8](/Media/2014/02/101112_1620_SCORemoteDe8_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe8.png)
 
   3. My Runbook for testing with is also dead simple; with just a Initialize, .NET and Notification set of activities
 
-[![101112_1620_SCORemoteDe9](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe9_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe9.png)
+[![101112_1620_SCORemoteDe9](/Media/2014/02/101112_1620_SCORemoteDe9_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe9.png)
 
   4. The interesting one here is the .NET activity, which again is just pointing to my DLL, and the Class I need to debug, along with the connection configuration we just looked at
 
-[![101112_1620_SCORemoteDe10](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe10_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe10.png)
+[![101112_1620_SCORemoteDe10](/Media/2014/02/101112_1620_SCORemoteDe10_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe10.png)
 
   5. With the only Property, being the name of the computer I wish to query for BitLocker Keys for
 
-[![101112_1620_SCORemoteDe11](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe11_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe11.png)
+[![101112_1620_SCORemoteDe11](/Media/2014/02/101112_1620_SCORemoteDe11_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe11.png)
 
 # Test Cycle
 
 In the Runbook tester, we can give the pack a test to see if it behaves as expected; In my case I am looking to see the BitLocker Information returned to the data bus, as in the screen shot below
 
-[![101112_1620_SCORemoteDe12](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe12_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe12.png)
+[![101112_1620_SCORemoteDe12](/Media/2014/02/101112_1620_SCORemoteDe12_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe12.png)
 
 # Remote Debug Cycle
 
@@ -84,7 +84,7 @@ In the Runbook tester, we can give the pack a test to see if it behaves as expec
 
   3. From the Debug Menu in Visual Studio, select Attach to Process
 
-[![101112_1620_SCORemoteDe13](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe13_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe13.png)
+[![101112_1620_SCORemoteDe13](/Media/2014/02/101112_1620_SCORemoteDe13_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe13.png)
 
   4. In the Attach to Process dialog
 
@@ -95,15 +95,15 @@ In the Runbook tester, we can give the pack a test to see if it behaves as expec
 
 Now look through the process list and select **PolicyModule.exe**. If you don't see it, make sure the checkbox for "Show processes in all sessions" is checked
 
-[![101112_1620_SCORemoteDe14](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe14_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe14.png)
+[![101112_1620_SCORemoteDe14](/Media/2014/02/101112_1620_SCORemoteDe14_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe14.png)
 
   5. With a connection made, and our host process located, click **Attach**. Visual Studio will then load up its symbols, and we should be ready for action. Of course make sure you now have a breakpoint set, for example in the Execute method
 
-[![101112_1620_SCORemoteDe15](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe15_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe15.png)
+[![101112_1620_SCORemoteDe15](/Media/2014/02/101112_1620_SCORemoteDe15_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe15.png)
 
   6. Back on the Runbook tester; step into out DLL Activity which we are about to Debug. As soon as you step into this activity, Visual studio will start to load its symbols in the background, and within a moment the debugger will be live, and you will see for example your Locals, now presented
 
-[![101112_1620_SCORemoteDe16](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe16_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/101112_1620_SCORemoteDe16.png)
+[![101112_1620_SCORemoteDe16](/Media/2014/02/101112_1620_SCORemoteDe16_thumb.png)](/Media/2014/02/101112_1620_SCORemoteDe16.png)
 
 # Wrap Up
 

@@ -20,11 +20,11 @@ Resetting my lab I needed to remove my App Controller installation after a probl
 
 However during installation I was presented with a problem I was not expecting to see, while on the installation screen “Configure the SQL Server database”
 
-[![image_thumb8](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb8_thumb1.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb81.png)
+[![image_thumb8](/Media/2014/02/image_thumb8_thumb1.png)](/Media/2014/02/image_thumb81.png)
 
 This calls for another trip back to the SQL server, as I figured by dropping the database everything was going to be fine. Obviously this is not the case, so back on the SQL Server Management Studio I needed to expand the SQL Server Agent node, to locate the Jobs node. Expanding the Jobs node I could find two possible culprits.
 
-[![image_thumb9](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb9_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/image_thumb91.png)
+[![image_thumb9](/Media/2014/02/image_thumb9_thumb.png)](/Media/2014/02/image_thumb91.png)
 
 By Right Clicking on each of these to jobs **CloudManagerDailyJobGroomer** and **CloudManagerOrphanedJobMarker**, I selected _Delete_ from the context menu to remove these.
 

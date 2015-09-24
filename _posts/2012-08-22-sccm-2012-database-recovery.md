@@ -37,21 +37,21 @@ After some checks and MS CSS, we recalled that the Setup tool for SCCM has a rec
 
 If you use the Add/Remove programs option on the server damaged, located the System Centre Configuration Manager entry for the role installed and select the option to Change/Update the installation the familiar setup wizard will launch as expected; however – this is truly in change mode and not repair mode… REALLY!
 
-[![082212_1443_SCCM2012Dat11](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1443_SCCM2012Dat11_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1443_SCCM2012Dat11.png)
+[![082212_1443_SCCM2012Dat11](/Media/2014/02/082212_1443_SCCM2012Dat11_thumb.png)](/Media/2014/02/082212_1443_SCCM2012Dat11.png)
 
 ### Rebuilding a SCCM Site
 
 Some more head scratching, and a Eureka moment later, we launch the SCCM Setup tool from the original media, which now runs in repair mode! SWEET. At this point I now have the option available to recover my site... here goes nothing.
 
-[![082212_1443_SCCM2012Dat21](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1443_SCCM2012Dat21_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1443_SCCM2012Dat21.png)
+[![082212_1443_SCCM2012Dat21](/Media/2014/02/082212_1443_SCCM2012Dat21_thumb.png)](/Media/2014/02/082212_1443_SCCM2012Dat21.png)
 
 Click Next, and the take a deep breath
 
-[![082212_1443_SCCM2012Dat31](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1443_SCCM2012Dat31_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1443_SCCM2012Dat31.png)
+[![082212_1443_SCCM2012Dat31](/Media/2014/02/082212_1443_SCCM2012Dat31_thumb.png)](/Media/2014/02/082212_1443_SCCM2012Dat31.png)
 
 Look closely at the image, and you will see that really sexy option – **Create a new database for this site**; oh there is some hope for me yet…. Click Next quickly J
 
-[![082212_1443_SCCM2012Dat41](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1443_SCCM2012Dat41_thumb.png)](http://172.21.10.63:84/wp-content/uploads/2014/02/082212_1443_SCCM2012Dat41.png)
+[![082212_1443_SCCM2012Dat41](/Media/2014/02/082212_1443_SCCM2012Dat41_thumb.png)](/Media/2014/02/082212_1443_SCCM2012Dat41.png)
 
 And there it is! The single most compelling reason to deploy a CAS; I have the option to now recover from another site within my environment – If I opted to use Primary only – this was going to be a dead end; and I would have to face the facts of a complete rebuild – or live without reports, updates etc. – which will never fly.
 
