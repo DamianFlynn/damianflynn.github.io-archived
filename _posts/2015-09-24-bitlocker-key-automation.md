@@ -8,25 +8,146 @@ categories: Tutorials
 tags:
 - Active Directory
 - PowerShell
--
+- Automation
 ---
 
-In order to delegate access to BitLocker Recovery Information objects in Active Directory to users that are not a member of the Domain Administrators group, Full Control access must be provided to these users. This can be done by a member of the Domain Administrators group using the Delegation of Control Wizard in the Active Directory Users & Computer console (DSA.MSC).
+## Delegate Access To BitLocker
 
-Use the following procedure to enable access to BitLocker Recovery Information on the Domain level to a group named “BitLocker Admins” in Active Directory:
-1.In ActiveDirectory Users & Computers, right click the domain name and select Delegate Control…
-2.In the first dialog of the Delegation of Control Wizard, click Next
-3.In the Users or Groups dialog, add the group or users for delegation (ie. BitLocker Admins) to the list and click Next
-SelectGroup
+In order to delegate access to BitLocker Recovery Information objects in Active Directory to users that are not a member of the Domain Administrators group, we have to offer Full Control or the computer objects.
 
-4.In the Tasks to Delegate dialog, select Create a custom task to delegate and click NextCreateCustomTaskToDelegate
-5.In the Active Directory Object Type dialog, select Only the following objects in the folder.
-6.In the list select msFVE-RecoveryInformation objects and click Next
+We can implement this using either the GUI or PowerShell. But the person executing the following procedure must be a member of the Domain Administrators group.
 
-DelegateControlofmsFVERecoveryInformation objects
-•In the Permissions dialog, select Full Control under Permissions and click Next
+### Active Directory Users and Computers UX
+Use the following procedure to enable access to BitLocker Recovery Information on the Domain level to a group named *"!Delegation grp BitLocker Admins"* in Active Directory:
 
-DelegatePermissionsFullControl
-•Click Finish
+* Launch **Active Directory Users & Computers**, and then **Right Click** the domain name in the left domain navigation tree pane, from the context menu select **Delegate Control…**
 
-Now members of the BitLocker Admins group that are not a member of Domain Admins can read BitLocker Recovery Information in Active Directory.
+* The **Delegation of Control Wizard**, will be offered, click **Next**
+
+  * On the **Users or Groups** page, add the group we will delegate the permission to (ie. *"!Delegation grp BitLocker Admins"*) to the list and click **Next**
+
+  * On the **Tasks to Delegate** page, select **Create a custom task to delegate** and click **Next**
+
+  * Now, on the **Active Directory Object Type** page, select **Only** the following objects, once complete click **Next**:
+
+    * msFVE-RecoveryInformation objects
+
+  * On the **Permissions** page, select **Full Control** under *Permissions* and click **Next**
+
+  * Finally, on the **Summary** page we can click **Finish**
+
+Now members of the *"!Delegation grp BitLocker Admins"* group can read BitLocker Recovery Information in Active Directory.
+
+
+## Powershell Workflow
+
+Now, we will use the following PowerShell workflow to accept the short name of the computer in the domain we wish to return the Bitlocker information for.
+
+The heart of this workflow is the following command from the Active Directory PowerShell module. Its task is to return the protected property **msfve-recoverypassword**, and to help deliver on this, we are providing credentials to the command. The credentials in question is a normal domain user, but this account is also a member of our newly created delegation group  *"!Delegation grp BitLocker Admins"* as this provides the rights necessary to read this property.
+
+```powershell
+$msfveRecoveryPassword = get-ADObject -ldapfilter "(msFVE-Recoverypassword=*)" -Searchbase $compObj.distinguishedname -properties canonicalname,msfve-recoverypassword -Credential $MSOPCreds
+```
+
+Now, with this understanding, we can see see how the rest of the flow works. The results of the process I am then returning in JSON format, as this allows me to safely consume the data either from a command line execution, a SharePoint triggered flow, or even a self service system like service manager.
+
+```powershell
+
+workflow Get-BitlockerRecoveryKey
+{
+    Param( [Parameter(Mandatory=$true) ][string]$ComputerName )
+
+    ##
+    ## Initialize Workflow
+
+    Write-Verbose -Message "Starting [$WorkflowCommandName]"
+	  $WarningPreference = 'Continue'
+
+    ##
+    ## Retrieve Variables from the Runbook Server
+
+    $WebServiceEndpoint = "https://localhost"
+
+    $VarList = @( 'MSOPCredentialsName' )
+    $Vars    = Get-BatchSMAVariable -Name $VarList `
+                                    -Prefix 'ExchangeHybrid' `
+                                    -WebServiceEndpoint $WebServiceEndpoint
+
+    # Retrieve Credential Object based on the Variable information provided back
+    $MSOPCreds = Get-AutomationPSCredential -Name $Vars.MSOPCredentialsName
+    Write-Verbose -Message "`$MSOPCreds.UserName [$($MSOPCreds.UserName)]"
+
+
+    $BitlockerInfo = InlineScript
+    {
+        # Assume inbound variables from the Parent Workflow
+        $MSOPCreds         = $Using:MSOPCreds
+        $ComputerName      = $Using:ComputerName
+
+        ##
+        ## Query the AD Account for Exchange related artifacts
+        $compObj = Get-ADComputer $ComputerName
+        $msfveRecoveryPassword = get-ADObject -ldapfilter "(msFVE-Recoverypassword=*)" -Searchbase $compObj.distinguishedname -properties canonicalname,msfve-recoverypassword -Credential $MSOPCreds
+
+
+        $ReturnInfo = @{
+            'distinguishedname'  = $compObj.DistinguishedName;
+            'Name'               = $ComputerName;
+            'Keys' 					    = @()
+        }
+
+        ##Loop through as their may be multiple saved
+        foreach ($recoveryEntry in $msfveRecoveryPassword)
+        {
+            $RecoveryInfo = @{
+                'Date'             = $Null;
+                'PasswordID'       = "";
+                'RecoveryPassword' = "";
+            }
+
+            $keyInfo = $RecoveryEntry.name
+            $pattern = '^(?<date>.{25}){(?<PasswordID>.{36})}$'
+            if($keyInfo -match $pattern) {
+                $RecoveryInfo.Date = $matches.date
+                $RecoveryInfo.PasswordID = $matches.PasswordID
+            }
+
+            $RecoveryInfo.RecoveryPassword = $RecoveryEntry."msfve-recoverypassword"
+            $ReturnInfo.Keys += $RecoveryInfo				
+        }
+
+        Return (ConvertTo-Json $ReturnInfo)
+    } #End Inline Script
+
+	Write-Verbose -Message "Finished [$WorkflowCommandName]"
+  Return $BitlockerInfo
+}
+```
+
+The results of calling this function will hand back a simple JSON object, for example
+
+```JSON
+{
+    "distinguishedname":  "CN=TESTPC01,OU=Computers,OU=!Offices,DC=diginerve,DC=org",
+    "Keys":  [
+                 {
+                     "Date":  "2011-10-07T19:00:27-00:00",
+                     "PasswordID":  "1296273E-9578-4270-83E1-8EE0ECD9F492",
+                     "RecoveryPassword":  "359612-188265-349613-035805-620840-183678-559251-433235"
+                 },
+                 {
+                     "Date":  "2011-01-31T17:55:51-00:00",
+                     "PasswordID":  "83F48728-D5C5-437B-AF74-C0E961F1FE8A",
+                     "RecoveryPassword":  "103774-233376-031141-392139-277002-103873-031086-150953"
+                 },
+                 {
+                     "Date":  "2010-02-04T14:15:24-00:00",
+                     "PasswordID":  "17025B19-8DB0-4084-8E7B-EDD750160E67",
+                     "RecoveryPassword":  "321596-696630-367400-169224-536580-039468-027170-286132"
+                 }
+             ],
+    "Name":  "TESTPC01"
+}
+```
+
+Consuming the result is also very simple, and will be a topic for another post as we explore how we can leverage this work.
