@@ -24,6 +24,7 @@ We can implement this using either the GUI or PowerShell. But the person executi
 
 ## Active Directory Users and Computers UX
 Use the following procedure to enable access to BitLocker Recovery Information on the Domain level to a group named *"!Delegation grp BitLocker Admins"* in Active Directory:
+
 * Launch *Active Directory Users and Computers*, and then **Right Click** the domain name in the left domain navigation tree pane, from the context menu select **Delegate Control…**
 * The **Delegation of Control Wizard**, will be offered, click **Next**
 * On the **Users or Groups** page, add the group we will delegate the permission to (ie. *"!Delegation grp BitLocker Admins"*) to the list and click **Next**
@@ -46,78 +47,6 @@ $msfveRecoveryPassword = get-ADObject -ldapfilter "(msFVE-Recoverypassword=*)" -
 Now, with this understanding, we can see see how the rest of the flow works. The results of the process I am then returning in JSON format, as this allows me to safely consume the data either from a command line execution, a SharePoint triggered flow, or even a self service system like service manager.
 
 <code data-gist-id="322050495c32d9d6eac2" data-gist-file="Resize-VMPartition.ps1"></code>
-
-```powershell
-workflow Get-BitlockerRecoveryKey
-{
-    Param( [Parameter(Mandatory=$true) ][string]$ComputerName )
-
-    ##
-    ## Initialize Workflow
-
-    Write-Verbose -Message "Starting [$WorkflowCommandName]"
-      $WarningPreference = 'Continue'
-
-    ##
-    ## Retrieve Variables from the Runbook Server
-
-    $WebServiceEndpoint = "https://localhost"
-
-    $VarList = @( 'MSOPCredentialsName' )
-    $Vars    = Get-BatchSMAVariable -Name $VarList `
-                                    -Prefix 'ExchangeHybrid' `
-                                    -WebServiceEndpoint $WebServiceEndpoint
-
-    # Retrieve Credential Object based on the Variable information provided back
-    $MSOPCreds = Get-AutomationPSCredential -Name $Vars.MSOPCredentialsName
-    Write-Verbose -Message "`$MSOPCreds.UserName [$($MSOPCreds.UserName)]"
-
-
-    $BitlockerInfo = InlineScript
-    {
-        # Assume inbound variables from the Parent Workflow
-        $MSOPCreds         = $Using:MSOPCreds
-        $ComputerName      = $Using:ComputerName
-
-        ##
-        ## Query the AD Account for Exchange related artifacts
-        $compObj = Get-ADComputer $ComputerName
-        $msfveRecoveryPassword = get-ADObject -ldapfilter "(msFVE-Recoverypassword=*)" -Searchbase $compObj.distinguishedname -properties canonicalname,msfve-recoverypassword -Credential $MSOPCreds
-
-
-        $ReturnInfo = @{
-            'distinguishedname'  = $compObj.DistinguishedName;
-            'Name'               = $ComputerName;
-            'Keys'                      = @()
-        }
-
-        ##Loop through as their may be multiple saved
-        foreach ($recoveryEntry in $msfveRecoveryPassword)
-        {
-            $RecoveryInfo = @{
-                'Date'             = $Null;
-                'PasswordID'       = "";
-                'RecoveryPassword' = "";
-            }
-
-            $keyInfo = $RecoveryEntry.name
-            $pattern = '^(?<date>.{25}){(?<PasswordID>.{36})}$'
-            if($keyInfo -match $pattern) {
-                $RecoveryInfo.Date = $matches.date
-                $RecoveryInfo.PasswordID = $matches.PasswordID
-            }
-
-            $RecoveryInfo.RecoveryPassword = $RecoveryEntry."msfve-recoverypassword"
-            $ReturnInfo.Keys += $RecoveryInfo
-        }
-
-        Return (ConvertTo-Json $ReturnInfo)
-    } #End Inline Script
-
-    Write-Verbose -Message "Finished [$WorkflowCommandName]"
-  Return $BitlockerInfo
-}
-```
 
 The results of calling this function will hand back a simple JSON object, for example
 ```json
