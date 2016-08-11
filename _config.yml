@@ -1,7 +1,11 @@
 # Dependencies
-markdown:            redcarpet
-highlighter:         pygments
+markdown:            kramdown
+highlighter:         rouge
 markdown_ext:        markdown,mkdown,mkdn,mkd,md
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 redcarpet:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
@@ -10,7 +14,6 @@ redcarpet:
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           /:year/:month/:day/:title/
-relative_permalinks: true
 
 # Setup
 title:               "Digital Nervous System"
@@ -38,3 +41,5 @@ exclude:             ["vendor"]
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
