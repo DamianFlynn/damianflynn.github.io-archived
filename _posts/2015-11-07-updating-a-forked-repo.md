@@ -10,7 +10,9 @@ tags:
 - OpenSource
 ---
 
-While recently working with a community project which is hosted using GIT, due to high frequency of activity in the main repository, I quickly found that I needed to re-sync my fork of the project with the main upstream copy. Additionally, this particular project happened to be structured using submodule's enabling the project to be segregated into a number of independently managed repositories. In this post, I will cover first how to clone a local copy of your projects fork, including its submodule's, fork and checkout a submodule including updating your references to use your fork of the submodule so you can manage it also as part of the project, then finally refresh your copy of the project from the upstream master repository to ensure your fork is updated to the current version.
+While recently working with a community project which is hosted using GIT, due to high frequency of activity in the main repository, I quickly found that I needed to re-sync my fork of the project with the main upstream copy. 
+
+Additionally, this particular project happened to be structured using submodule's enabling the project to be segregated into a number of independently managed repositories. In this post, I will cover first how to clone a local copy of your projects fork, including its submodule's, fork and checkout a submodule including updating your references to use your fork of the submodule so you can manage it also as part of the project, then finally refresh your copy of the project from the upstream master repository to ensure your fork is updated to the current version.
 
 # Forking
 The concept of forking is to create a linked copy of a repository for your own project, This parent and child relationship of repositories is more commonly refered to as the upstream (original or master) and the fork (our GIT copy). Our forked copy is where we will carry out all our work, checking in changes and creating tags and versions.
