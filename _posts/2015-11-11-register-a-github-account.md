@@ -12,11 +12,10 @@ tags:
 - DevOps
 ---
 
-# GitHub How to register for an account
 
 DEVOPS is everywhere and as hard as you might try to ignore it, sooner or later you are going to need to embrace at least some of the benefit's which are offered. In this post we will introduce GIT, GITHUB, and register an account on this free service
 
-## What is GIT?
+# What is GIT?
 
 GIT, a version control solution is one of the most useful pieces of software you will ever embrace. As and IT Pro you will have been haunted by the plague which is PowerShell, VBScript and many other 'Programming' or 'Scripting' solutions over the course of your career; and if you are honest you will have had the unfortunate experience of getting the script finally working, only to add an extra tweak which totally broke all your work, and of course you no longer have a copy of that last good version.
 
@@ -33,7 +32,7 @@ We can actually go a step further, GIT is designed to be used by teams, so multi
 This is an awesome piece of software, very lightweight, and if you are really interested, you should check out this free resource [Pro Git 2.0](https://git-scm.com/book)
 
 
-## What is GitHub?
+# What is GitHub?
 
 You may have heard that GitHub is a code sharing and publishing service, or that it’s a social networking site for programmers.
 
@@ -47,7 +46,7 @@ When you submit a pull request, the project’s maintainer can see your profile,
 
 In addition to the public facing open source repositories, GitHub also sells private repositories and on-premise instances of its software for enterprises. These solutions obviously can’t take full advantage of GitHub’s network effect, but they can take advantage of the collaboration features. That’s how GitHub makes money, but it’s not alone in this market.
 
-## GitHub Account
+# GitHub Account
 
 The sign up process for a GITHUB account is very straight forward. you simply need to point your browser to the [GitHub.com site](https://github.com). Once on the site, locate the button for **Sign up** and click it. This will drop you on the page to **Join GitHub**, where we have 3 simple steps to complete.
 
@@ -58,7 +57,7 @@ That's it! Really! you now have a GITHUB account.
 
 You will be taken to the dashboard, from there we will need to navigate to the **Personal Settings** area, and complete your **Email** verification, failure to validate your mail address will prevent you from contributing to GitHub!
 
-## Next Steps
+# Next Steps
 
 Now that you have a GitHub account, you will want to establish at least one repository and sync it with a local GIT repository you may already have or clone your new GitHub repository to your local system.
 

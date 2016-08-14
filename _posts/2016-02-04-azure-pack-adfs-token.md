@@ -13,7 +13,7 @@ tags:
 - PowerShell
 ---
 
-This post is primarily for personal reference. It is a clone of the code posted on the (Windows Azure Pack Serurity Troubleshooting)[https://technet.microsoft.com/en-us/library/dn554315.aspx#C_GetMgmtSvcToken] page.
+This post is primarily for personal reference. It is a clone of the code posted on the (Windows Azure Pack Security Troubleshooting)[https://technet.microsoft.com/en-us/library/dn554315.aspx#C_GetMgmtSvcToken] page.
 
 The code resolves a problem in the default function when requesting a token to work with the Azure Pack sites from PowerShell, in the scenario that the site is configured with a connection to ADFS. 
 

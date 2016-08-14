@@ -9,7 +9,6 @@ tags:
 - PowerShell
 ---
 
-# Downloading the Wallpaper of the Day
 
 One of the more challenging issues with building a big proof of concept environment with lots of different ADFS instances, is to make each distinguishable. The simplest way to accomplish this is to provide a nice graphic, however my artistic abilities leave much to be desired.
 

@@ -12,8 +12,6 @@ tags:
 - Federation
 ---
 
-# Base64 GUIDs
-
 Just a short note this time. As I continue to work on multiple federation partners, and configuration endpoints, I continue to see a mix of formats being transmitted when passing GUID style values.
 
 These are appearing as either Base64, or raw GUID; so to assist I created a simple function which would allow me to see the GUIDs from my idP in both formats to assist with debugging.
