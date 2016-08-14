@@ -1,7 +1,7 @@
 ---
 author: Damian Flynn
 comments: true
-date: 2016-02040 09:40:00
+date: 2016-02-04 09:40:00
 layout: post
 title: "Azure Pack: Get the Token?"
 categories: Tutorials
