@@ -12,7 +12,6 @@ tags:
 
 This morning I am proud and delighted to announce that I am now officially part of the amazing energy of the Lumagate team. I will continue be based in Ireland, but will be working close with the Lumagate team across the Nordics and throughout Europe, exercising my favourite motto – “Making Incredible Technology, Incredibly Simple!” 
 
-[![Making Incredible Technology, Incredibly Simple](http://damianflynn.com/Media/2016/08/making_incredible_technology_incredibly_simple-.jpg)](http://www.lumagate.com/news/lumagate-strengthen-its-team-with-datacenter-and-cloud-expert))
 
 Learn more, about my new role and focus, by clicking below and reading the official press release.
 
