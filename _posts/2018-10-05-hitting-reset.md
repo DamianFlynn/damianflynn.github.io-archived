@@ -1,60 +1,76 @@
 ---
 layout: post
 title: "Hitting Reset"
-date: 2018-10-05 06:00:00
+date: 2018-10-05 18:10:05
 tags:
-- Jekyll
-- UI
-- UX
+- MVP
 categories:
-twitter_text: 'Hitting Reset, Trying again'
+- Azure
+- Announcements
+- Events
+- IT Pro/DevOps
+twitter_text: 'Hitting Reset!'
 authors: Damian Flynn
 ---
 
-10 Years, Its hard to believe thats i have been posting thoughts here that long. And how so much has changed since I begun.
+10 Years, Its hard to believe thats I have been posting thoughts here that long. And how so much has changed since I begun.
 
-I started this journey with the encouragement of some amazing people in Microsoft, as an opportunity to spread the news about Hyper-V and even more relevant at the time System Center Virtual Machine Manager.
+I started this journey with the encouragement of some amazing people in Microsoft, as an opportunity to spread the news about *Hyper-V* and even more relevant at the time *System Center Virtual Machine Manager* which was still known by its code name!.
 
-My daily experience with this application, Windows Server, and real world enterprise issues; positioned me at the leading edge of Microsoft Technologies; and a true business driver pushing forward. Exposing lots of fantastic information to share - sometimes not good news; but never the less - reality. Challenges to be faced head on, and an approach on how to address this.
+My daily experience with this application, Windows Server, and real world enterprise issues; positioned me at one of the leading edges of Microsoft Technologies; and fully armed with a true business driver pushing forward. Wounds and pains exposed, I gained a lot insight to the digital plumbing of these technologies and as a result a lot of fantastic information to share - sometimes not good news; but never the less - reality.
 
-I have primarily worked in the mindest that when I find an issue to be addressed, before sharing, escalating or attacking - I need to stop and consider solutions; which normally result in a more constructive and progressive approach to unblocking my path. That ethos spans back to my days working as what would be considered in 2018 as an IoT architect; in a rubber molding manufacturing plant; The Operations Manager always reminded me that I entered his office, If I dont have some suggestion for a solution before entering and presenting a problem - go away and come back when I am prepared.
+I have primarily worked in the mindset that when I find an issue to be addressed, before sharing, escalating or attacking - I need to stop and consider solutions; which normally result in a more constructive and progressive approach to unblocking my path. That ethos spans back to my days working as what would be considered today in 2018 as an *IoT* architect; but 20 years ago in a Rubber Molding plant, The Operations Manager always reminded me as I entered his office, "If you dont have some suggestion for a solution before entering and presenting a problem, leave now, and come back when I am prepared (But don't spend all day - Problems cost money!)."
 
-I now realise that he had no technical knowledge, and without my suggestions, we were sunk!
+In Hindsight, this approach challenged my limits every day; but I now also realise that he actually had no technical knowledge, and without my suggestions, we were heading the route of the Titanic!
 
-## System Center Demise
+## System Center
 
-While the solution itself continues to live on, as clear form the very recent launch of *System Center 2019*; my passion and engagement with this technology after working on a number of books, and speaking at so many events, ultimately diminished to a point of history.
+While the solution itself continues to live on, as clear form the very recent launch of *System Center 2019* at the Ignite Conference in Florida; My own passion and engagement with this technology has ultimately diminished to a point of history., despite co-authoring and technically reviewing a number of books, speaking at so many events, and investing 1000's of hours.
 
 ## Personal Redevelopment
 
-After almost 20 years I changed Jobs, A decision which was extremely difficult to make; and even post that break point; took at least 6 more months to adjust to the new order. 
+After almost 20 years I changed Jobs, A decision which was extremely difficult to make; and honestly post that change point; I took at least 6 more months to adjust to the new world order.
 
-I was now working with a team of like minded peers, and left to find a niche which I could own; working with some exciting cases; and totally new challanges was amazing; but yet I still felt empty. 
+I found myself amidst a team of like minded peers, left to find a niche which I could own. Despite working with fantastic scenarios, these new challenges were amazing; and I was learning new stuff again. But, yet I still felt uninspired.
 
-Just look at the number of blog posts I have published in the last 3 years
+Just reflect on the number of blog posts I have published in the last 3 years.
 
-My personal life also took a major change; and today after celebrating 21 years of marriage; I am a super proud father of two amazing children, with the oldest just after celebrating her 4 birthday.
+My personal life also took a major change; and today after celebrating 21 years of marriage; I am a super proud father of two amazing girls, with my oldest just after celebrating her 4 birthday and the youngest just turned 2.
 
-Combine these changes and its a totally different world from when I stood just 10 years ago.
+When, I reflect on these massive changes, it is a totally different world from when I stood just 10 years ago.
 
-## Finding the Mojo
+## Inspiration
 
-Least week I participated in my first Microsoft Ignite event; and spent the vast majority of this opportunity meeting with so many old friends who have also evolved into completely new roles within their organizations.
+Last week I participated in my first **Microsoft Ignite** event; and spent the vast majority of this opportunity meeting with so many old friends who have also evolved into completely new roles within their organizations.
 
-As an example Taylor Brown; I had the honor of meeting almost 12 year ago, at which time we worked on Testing Scenarios for Hyper-V; in his role he ran the labs for Microsoft's internal testing; and I was responsible for our internal Technology Adoption Program (TAP) Pilot testing. Today Taylor owns the Docker (Container) features in Windows Server. An Amazing person, and achievement. 
+As an example, Mr. Taylor Brown; I had the honor of meeting Taylor for the first time almost 12 year ago. Back then we both were working on Test Scenarios for Hyper-V; in his role he ran the labs for Microsoft's internal testing; and I was responsible for our internal *Technology Adoption Program (TAP)* Pilot testing. Today, Taylor owns the *Docker (Container)* features in Windows Server. An amazing achievement, from an inspiring person and good friend. 
 
-There are so many amazing people, with just as amazing stories; and I was so proud to be able to stop, and say hello to these icons.
-
-However, My Mojo has been getting some new life as I assume focus on taking my history and experiences, both technical, and political; and put these back to work. 
+There are so many amazing people, with just as amazing stories; and I was so proud to be able to stop, and say hello to these *icons*, and learn how their lives have also changed.
 
 ## Governance
 
-As the adoption, and practices of Cloud become centrally focused for some many organizations the focus shifts left, as Compliance, Control, and Culture changes ignite to enable a completely fresh view of the potential.
+As the adoption, and practices of Cloud become centrally focused for so many organizations the focus shifts left, as Compliance, Control, and Culture changes ignite to enable a completely fresh view of the potential.
 
-When we combine this past experience, with the foundational tooling which 3rd parties like Terraform offer, and native tooling which is Microsoft adding to the core of their offerings, the next challenge is clear.
+When I combine past experience, with the foundational tooling which 3rd parties like Terraform offer, and native tooling which Microsoft adding to the core of their offerings, the next challenge is clear.
 
-Now we have a path to assist organizations of any size to evolve from what might have been the chaos of Shadow IT, the central control of IT, or the old practices of Enterpries Architects; and guide them to a culture driven embracement of Cloud; supported with *Governance* and enabling that missing **trust** tought the use of *Safety Guard Rails*
+Now, I see a clear path to assist organizations of any size to evolve from what might have been the chaos of Shadow IT, the central control of IT, or the old practices of Enterprise Architects; and guide them to a culture driven enablement of Cloud; supported with *Governance* and enabling that missing **trust** thought the use of *Safety Guard Rails*
 
-## The next journey
+## Finding my Mojo
 
-Looking back at Ignite and the last 6 months; my Focus is in assisting organizations on this transformation. Focused discussions, lots of hands on demonstrations, Technical Policy's 
+Looking back at Ignite and the last 12 months of work; I now feel like I have a new rhythm. I have found a new passion - Namely that of enabling organizations on this transformation trough common sense, debate and technology.
+
+Addressing political issues, and provisioning the structures of support required to encourage trust and co-operation, all of which is based on a logical technical foundations *(Yes Mr. Spock!)*. 
+
+Even more rewarding, I am actually observing directly the impact this has on people and processes as they evolve their life's with the culture changes required to start a new fabric of growth in cloud and DevOps practices; while also addressing their relationships with the business owners.
+
+I believe I have found my *Mojo*.
+
+## The Next Step...
+
+Over the last years I have had the honor of presenting at so many fantastic conferences, delivering workshops, and engagement in meetups. When I reflect on the topics I have focused on these all have contributed to building strong foundational elements to this new way. 
+
+Topics ranging from Containerization and Automation with Docker and Kubernetes, Serverless to AI, BOT Frameworks to Python, Git flow to Infrastructure as Code, DevOps to Event Handling; while all feel very disjointed, these technologies combined are core to understanding how the world is evolving, and therefore how organization's can adopt.
+
+Its time to **Hit Refresh**, and join me on this next wave, as I share, present, document, and offer guidance; both here on the Blog, On stages in various locations and professionally, though a range of mediums from 'hands on' demonstrations, Technical guides, papers, and talks.
+
+I have my *mojo* charged and ready; Have You?
