@@ -39,7 +39,7 @@ I want something that is easy use, a lot less prone to hacking, and painless to 
 
 ## Building
 
-Leveraging GIT for my version control, I have a simple pipeline which rebuilds and new version of the site each time a new commit is made to the repository. I do like to tweak and have actaully no less than two approaches to the effort
+Leveraging GIT for my version control, I have a simple pipeline which rebuilds a new version of the site each time a new commit is made to the repository. I do like to tweak and have actaully no less than two approaches to the effort
 
 <div class="mermaid" style="text-align:center">
 graph LR
@@ -78,7 +78,6 @@ graph TD
     A -.-> B
     B --> C
     C --> D
-    D --> E
 </div>
 
 The *YAML* representation of the flow is as follows; you can also chose to add the steps in the UX, and provide the data below into the relevant fields, as there is a 1:1 relationship between the UX and the YAML Infrastructure as Code
