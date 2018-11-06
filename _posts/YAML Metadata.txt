@@ -53,8 +53,8 @@ tags:
 - C#
 
 - Release Management
-- Continous Deployment
-- Continous Integration
+- Continuous Deployment
+- Continuous Integration
 
 - Azure
 - Resource Manager
