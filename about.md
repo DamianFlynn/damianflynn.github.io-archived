@@ -7,7 +7,7 @@ image: /images/default/damian_2011.jpg
 
 ## Making incredible technology, incredibly simple.
 
-Damian is a Principal Consultant for [Lumagate](https://www.lumagate.com); an evangelist, Blogger, Lecturer and Public Speaker; Husband and proud father of two beautiful girls.
+Damian is a Principal Consultant for [Innofactor](https://www.innofactor.com); an evangelist, Blogger, Lecturer and Public Speaker; Husband and proud father of two beautiful girls.
 
 My creear has been long, and enjoyable, with a finger in computers and toe in electronics. Over the years I have accepted many acolades, but my favourites has included been honored to be recognised as a Microsoft MVP since 2011 under the diciplins of 'Hyper-V' and 'Cloud and Datacenter', while also been a Cisco Champion since 2014. 
 
