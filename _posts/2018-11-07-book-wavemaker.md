@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reading material: WaveMaker"
-date: 2018-11-97 10:30:30
+date: 2018-11-07 10:30:30
 comments: true
 description: Careers are what we all invest our energy and emotions in, either positively or negatively
 categories:
