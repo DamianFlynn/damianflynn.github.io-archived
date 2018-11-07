@@ -41,15 +41,15 @@ I want something that is easy use, a lot less prone to hacking, and painless to 
 
 Leveraging GIT for my version control, I have a simple pipeline which rebuilds and new version of the site each time a new commit is made to the repository. I do like to tweak and have actaully no less than two approaches to the effort
 
-<div class="mermaid">
-graph LR;
-    A (Blog Repository)
-    B (Build Pipeline)
-    C (Docker Based Build)
-    D (Native Build)
-    E (Publish Built Site)
+<div class="mermaid" style="text-align:center">
+graph LR
+    A(Blog Repository)
+    B(Build Pipeline)
+    C(Docker Based Build)
+    D(Native Build)
+    E(Publish Built Site)
 
-    A -->|Git Push| B;
+    A -.->|Git Push Trigger| B
     B --> C
     B --> D
     C --> E
@@ -68,7 +68,7 @@ The build is running on a hosted Ubuntu 1604 instance, but this could be easily 
 
 The pipeline has only 3 steps
 
-<div class="mermaid">
+<div class="mermaid" style="text-align:center">
 graph TD
     A[Retrieve the relevant commit from Git Repo]
     B(Run Docker Image to Build Site)
@@ -138,7 +138,7 @@ This pipleine is a little more verbose with 5 steps currently
 
 The pipeline has only 3 steps
 
-<div class="mermaid">
+<div class="mermaid" style="text-align:center">
 graph TD
     A[Retrieve the relevant commit from Git Repo]
     B(Use a Current Release of Ruby)
