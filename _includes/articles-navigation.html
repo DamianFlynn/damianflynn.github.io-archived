@@ -1,0 +1,57 @@
+{% comment %}
+http://stackoverflow.com/questions/25348389/jekyll-and-liquid-show-related-posts-by-amount-of-equal-tags-2
+Show related reading based on tags. If no related tags, show previous and next articles.
+- added prev and next post if none related by tag
+{% endcomment %}
+
+<div class="ui horizontal divider center aligned">Recent Updates</div>
+
+<div class="articles-related">
+  
+  <div class="ui two stackable cards">
+  
+  {% if page.previous.url %}
+    <div class="ui card related-cards">
+    <!-- <div class="ui card related-cards" style="background-position: left; background-size: contain; background-repeat:no-repeat; background-image: url({{ page.previous.image | prepend: site.baseurl }})"> -->
+      <div class="content">
+        <div class="card-header">
+          <h4><a href="{{ page.previous.url | prepend: site.baseurl }}">{{page.previous.title}}</a></h4>
+        </div>
+        <div class="meta">
+          <span class="category">{{page.previous.date | date: "%B %-d, %Y"}}</span>
+        </div>
+        <div class="description">
+          {{ page.previous.content | markdownify | strip_html | truncate:80 }}
+          <div class="read-now">
+            <a href="{{ page.previous.url | prepend: site.baseurl }}">Read now </a>
+            <i class="icon space shuttle"></i>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  {% endif %}
+  {% if page.next.url %}
+    <div class="ui card related-cards">
+    <!--<div class="ui card related-cards" style="background-position: right; background-size: contain; background-repeat:no-repeat; background-image: url({{ page.next.image | prepend: site.baseurl }})">-->
+      <div class="content">
+        <div class="card-header">
+          <h4><a href="{{ page.next.url | prepend: site.baseurl }}">{{page.next.title}}</a></h4>
+        </div>
+        <div class="meta">
+          <span class="category">{{page.next.date | date: "%B %-d, %Y"}}</span>
+        </div>
+        <div class="description">
+          {{ page.next.content | markdownify | strip_html | truncate:80 }}
+          <div class="read-now">
+            <a href="{{ page.next.url | prepend: site.baseurl }}">Read now </a>
+            <i class="icon space shuttle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  </div><!--  ui 3 cards -->
+</div>  
+  
