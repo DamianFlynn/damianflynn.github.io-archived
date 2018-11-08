@@ -29,16 +29,18 @@ categories:
 - Web
 
 tags:
-- Achivements
+- Career
+- Books
+- Achievements
 - MVP
 - Cisco Champion
-- Career
 - Book
 - White Paper / Case Study
 - Podcast
 - Conference
 - Webinar
 - Live Event
+
 
 - Lionbridge
 - Lumagate
