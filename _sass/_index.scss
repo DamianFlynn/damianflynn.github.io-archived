@@ -1,5 +1,7 @@
 .post {
    background-color: $grey-lightest;
+   border: 1px solid;
+   border-color: lighten( #f2711c, 11% ) ;
    margin-bottom: 60px;
    padding-bottom: 40px;
 }
