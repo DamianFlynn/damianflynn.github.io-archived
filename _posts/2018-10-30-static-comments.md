@@ -60,6 +60,32 @@ Therefore I immediately deleted the liquid code and stopped any further integrat
 
 Watching how Microsoft recently replaced their commentary service on the *docs.microsoft.com* sites to leverage GitHub, I decided that this might be a really good solution for this site also.
 
-After a little research, I found a lovely match called **utteranc.es** which requires that you log in with your Github account, and will create a new issue per post in my site, that can be tracked and managed as normal issue comments. 
+After a little research, I found a lovely match called **utteranc.es** which requires that you log in with your Github account, and will create a new issue per post in my site, that can be tracked and managed as normal issues within github which is pretty awesome. 
 
 (I assume based on my content and audience that this should not be a problem - let me know on Twitter if I am wrong about this)
+
+#### Implementing Utteranc.es
+
+Adding this feature is trivial, Really trivial!
+
+1. We require a public Github Repo
+2. Authorise the [Utteranc.es Bot][https://github.com/apps/utterances] access to the selected Repo
+3. Add the following javascript code to our page, updating the paramater `repo="[ENTER REPO HERE]"` to match the Repo name; for example `repo="[damianflynn/damianflynn.github.io"`
+
+```javascript
+<script src="https://utteranc.es/client.js"
+        repo="[ENTER REPO HERE]"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+```
+
+I have added a little extra logic to determine which pages to offer comments; for example; I do not need this feature on the main landing page.
+
+## Summary
+
+Now, I really want you to tell me what your thoughts about this for a solution? 
+
+Go On, Leave a comment, even if its just a thumbs up or down!
