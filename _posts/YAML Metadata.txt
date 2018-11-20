@@ -60,6 +60,9 @@ tags:
 
 - Azure
 - Resource Manager
+- ARM
+- Azure Policy
+- Azure
 - Web Sites
 - Virtual Machines / IaaS
 - Traffic Manager
