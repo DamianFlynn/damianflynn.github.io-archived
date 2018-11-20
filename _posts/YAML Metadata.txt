@@ -140,4 +140,8 @@ tags:
 - Elve
 - iRidium Mobile
 - HomeAssistant
+- SoC
+- Microcontrollers
+- IoT
+
 ---
