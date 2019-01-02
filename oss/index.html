@@ -1,0 +1,76 @@
+---
+layout: default
+current: home
+class: 'home-template'
+navigation: True
+cover: assets/images/oss/community.png
+---
+
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {% if site.logo %}
+                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
+            </h1>
+            <h2 class="site-description">Life is about Creating & Living Experiences that are worth Sharing</h2>
+            <h5>- Steve Jobs</h5>
+        </div>
+        {% include site-nav.html %}
+    </div>
+</header>
+
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+
+            
+<article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
+  
+  <a class="post-card-image-link" href="https://github.com/DamianFlynn/Elve">
+      <div class="post-card-image" style="background-image: url(/assets/images/oss/smarthouse.jpg)"></div>
+  </a>
+ 
+  <div class="post-card-content">
+      <a class="post-card-content-link" href="https://github.com/DamianFlynn/Elve">
+          <header class="post-card-header">
+              <h2 class="post-card-title">Suddenly it's Smart!</h2>
+          </header>
+          <section class="post-card-excerpt">
+              <p>Teach a dumb device to communicate... If you're interested in taking your home from dumb to smart, how do you start? And how can you build on it to make it incrementally more intelligent all the time? </p>
+          </section>
+      </a>
+  </div>
+</article>
+
+<article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
+  
+  <a class="post-card-image-link" href="https://github.com/DamianFlynn/Events">
+      <div class="post-card-image" style="background-image: url(/assets/images/oss/20181024-experts-live-prague-030.jpg)"></div>
+  </a>
+ 
+  <div class="post-card-content">
+      <a class="post-card-content-link" href="https://github.com/DamianFlynn/Events">
+          <header class="post-card-header">
+              <h2 class="post-card-title">Workshops & Events</h2>
+          </header>
+          <section class="post-card-excerpt">
+              <p>I have the pleasure to get hands on, share knowledge and grow. However I recognise not everyone is lucky enought to travel and attend events. I wanted a method to make some of this content available and have begun hosting resources for easy access on my GitHub repository.</p>
+          </section>
+      </a>
+  </div>
+</article>
+
+<!---->
+
+</div>
+
+</div>
+</main>

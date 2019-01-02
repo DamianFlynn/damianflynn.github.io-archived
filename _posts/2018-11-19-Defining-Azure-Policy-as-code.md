@@ -1,25 +1,27 @@
 ---
 layout: post
+current: post
+class: post-template
+subclass: 'post'
+navigation: True
+cover: assets/images/posts/2018-11-19/banner.jpg
 title: "Defining Policy as Code with ARM Templates"
-date: 2018-11-20 07:15:09
-comments: true
 description: "Defining your Policy's as Code in Azure Resource Manager Templates"
+date: 2018-11-20 07:15:09
+author: damian
+comments: true
+tags:
+- Azure
 categories:
 - Cloud Strategy
 - Developer
 - IT Pro/DevOps
-tags:
 - Community
 - ARM
 - Azure Policy
 - Azure
 - Resource Manager
 - Cloud
-twitter_text: "Defining your Policy's as Code in Azure Resource Manager Templates"
-authors: Damian Flynn
-image: /images/posts/2018-11-19/banner.jpg
-image_url: .
-image_credit: unknown
 ---
 
 My colleagues and friends [Tao Yang](https://blog.tyang.org/2018/06/06/using-arm-templates-to-deploying-azure-policy-definitions-that-requires-input-parameters/) , and [Stanislav Zhelyazkov](https://cloudadministrator.net/2018/07/17/defining-input-parameters-for-policy-definitions-in-arm-template/) have both recently posts interesting topics on how to implement your Azure Policy as Code which I strongly recommend you take a few moments to review 

@@ -1,25 +1,27 @@
 ---
 layout: post
+current: post
+class: post-template
+subclass: 'post'
+navigation: True
+cover: assets/images/posts/2018-10-30/banner.jpg
 title: "Static Comments"
-date: 2018-10-30 22:02:19
-comments: true
 description: Implementing Comments on a Static Site
+date: 2018-10-30 22:02:19
+author: damian
+comments: true
+tags:
+- Azure
 categories:
 - Developer
 - IT Pro/DevOps
 - Web
-tags:
 - OpenSource
 - Git / GitHub
 - Continuous Deployment
 - Azure
 - Web Sites
 - Cloud
-twitter_text: 'Implementing #GITHUB Commenting System on #Jekyll'
-authors: Damian Flynn
-image: https://media.wired.com/photos/59d67aeeb630711f17447691/master/pass/ChatBubbles-758308587.jpg
-image_url: .
-image_credit: Unknown
 ---
 
 At this point we are almost ready to go live with our site, however, one of the cornerstones to growing and sharing is communication. 

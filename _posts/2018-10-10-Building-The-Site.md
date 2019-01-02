@@ -1,22 +1,27 @@
 ---
 layout: post
+current: post
+class: post-template
+subclass: 'post'
+navigation: True
+cover: assets/images/posts/2018-10-20/banner.jpg
 title: "Constructing a new Home with Jekyll and Azure DevOps"
-date: 2018-10-10 22:15:09
-comments: true
 description: Building a new Static Site in Markdown, using Jekyll, GIT Flow and Azure DevOps
+date: 2018-10-10 22:15:09
+author: damian
+comments: true
+tags:
+- Azure
 categories:
 - Developer
 - IT Pro/DevOps
 - Web
-tags:
 - OpenSource
 - Git / GitHub
 - Continuous Deployment
 - Azure
 - Web Sites
 - Cloud
-twitter_text: 'Constructing a new Home with Jekyll and Azure DevOps'
-authors: Damian Flynn
 ---
 
 One of the unspoken truths behind the lack of posts in recent history was due to a few bugs, which in the end resulted in an experience where from home it appeared that any new content was published and working; but outside this fortress in the real world, there was a large silence echoing.

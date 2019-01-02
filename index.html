@@ -1,64 +1,39 @@
 ---
 layout: default
+current: home
+class: 'home-template'
+navigation: True
 ---
-{% include masthead.html %}
-{% include menu.html %}
 
-<div class="ui vertical stripe segment">
-   <div class="ui middle aligned stackable text container">
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
 
-       <main class="site-main"> 
-           {% for post in site.posts limit:10 %}
-           <article class="post">
-               <header class="entry-header"> 
-                   <div class="entry-header-wrap">
-                       {% if post.image %}
-                       <a href="{{site.baseurl}}{{post.url}}" class="post-thumbnail"><img src="{{ post.image | prepend: site.baseurl }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }} {% endif %}"></a>
-                       {% endif %}
-                       <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="Permanent Link to {{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h2>
-                   </div><!-- .entry-header-wrap -->
-                   <div class="entry-meta">
-                       by <span class="post-author">{{ site.author_name }}</span> on <time class="published" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-                   </div><!-- .entry-meta -->
-               </header><!-- .entry-header -->
-               <div class="entry-content">
-                  
-                   {% if post.content contains '<!--more-->' %}
-                       {{ post.content | split:'<!--more-->' | first }}
-                   {% else %}
-                       {{ post.content | markdownify | strip_html | truncate:320 }}
-                   {% endif %}
-                  
-                   <p class="read-more" style="margin-top: 40px"><a href="{{ site.baseurl }}{{ post.url }}" class="more-link" title="read more">read more</a></p>
-               </div><!-- .entry-content -->
-               <div class="ui horizontal divider center aligned" style="margin: 0em">Tags</div>
-               {% if post.tags.size > 0 %}
-               <footer class="entry-footer">
-                   <div class="ui horizontal list">
-                     {% for tags in post.tags %}
-                     <div class="item">
-                       <a class="ui basic label orange large" href="/tags/#{{ tags }}" title="{{ tags }}">{{ tags }}</a>
-                     </div>
-                     {% endfor %}
-                   </div>
-               </footer><!-- .entry-footer -->
-               {% endif %}
-           </article><!-- .post -->
-           {% endfor %}
-           {% if paginator.total_pages > 1 %}
-           <nav class="pagination">
-               <h2 class="screen-reader-text">Posts navigation</h2>
-               {% if paginator.previous_page %}
-               <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="newer-posts fa-chevron-left square fill-horizontal"><span class="screen-reader-text">Newer Posts</span></a>
-               {% endif %}
-               <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-               {% if paginator.next_page %}
-               <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="older-posts fa-chevron-right square fill-horizontal"><span class="screen-reader-text">Older Posts</span></a>
-               {% endif %}
-           </nav><!-- .pagination -->
-           {% endif %}
-       </main><!-- .site-main -->
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {% if site.logo %}
+                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
+            </h1>
+            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
+        </div>
+        {% include site-nav.html %}
+    </div>
+</header>
 
-   </div><!-- .inner -->
-</div><!-- .site-content -->
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
 
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
+        </div>
+
+    </div>
+</main>
