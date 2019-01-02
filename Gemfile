@@ -1,10 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'github-pages'
-gem 'jekyll'
-gem 'jekyll-mentions'
-gem 'jekyll-redirect-from'
-gem 'jekyll-seo-tag'
-gem 'jekyll-sitemap'
-gem 'jekyll-feed'
-gem 'tzinfo-data'
+gem "jekyll", "~> 3.7.4"
+gem "github-pages", "~> 192"
+gem "rake", "~> 12.3.1"

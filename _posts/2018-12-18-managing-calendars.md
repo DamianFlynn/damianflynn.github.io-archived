@@ -1,25 +1,26 @@
 ---
 layout: post
+current: post
+class: post-template
+subclass: 'post'
+navigation: True
+cover: assets/images/posts/2018-12-18/banner.jpg
 title: "Assistants, Family's, Work and Calendars = Chaos"
-date: 2018-12-18 10:30:30
-comments: true
 description: Sorting out the chaos of managing multiple calendars, and putting assistants to work
-categories:
-- Messaging Platforms
-- Mobile
-- Smart Home/Buildings
-
+date: 2018-12-18 10:30:30
+author: damian
+comments: true
 tags:
+- Internet of Things
+categories:
+- Smart Home
+- Siri
+- Alexa
+- Google Home
 - Azure
 - Microsoft Flow
 - Synchronization
 - Exchange
-
-twitter_text: 'Using Microsoft Flow, and some simple planning, take control of your Assistants and Scheduling your Life'
-authors: Damian Flynn
-image: /images/posts/2018-12-18/banner.jpg
-image_url: .
-image_credit: unknown
 ---
 
 
@@ -97,6 +98,43 @@ Using Microsoft Flow, I created three flows to synchronise these schedules
 3. Sync Family Google Calander appointments to Work Calander *[as Time Blockers]*
 4. Sync MVP calendar to my Work Calander *[as Time Blockers]*
 
+### The Big Picture
+
+Now with the boundaries defined, and the flows described, let's visualise this challenge
+
+
+<div class="mermaid">
+graph LR
+
+    subgraph Google Calanders
+    C[<b>My Schedule</b><br><i>My Personal<br>Google Calander</i>]
+    G[<b>Wifes Schedule</b><br><i>Her Personal<br>Google Calander</i>]
+    D(<b>Family</b><br><i>Shared Family<br>Google Calander</i>)
+    end
+
+
+    subgraph My Calanders
+    A[<b>MVP Calander</b><br><i>Office 365</i>]
+    B[<b>Work Calander</b><br><i>Office 365</i>]
+    end
+
+    E(<b>My Assistants Profile</b><br><i>Google/Alexa/Siri</i>)
+    F(<b>Wife Assistants Profile</b><br><i>Google/Alexa/Siri</i>)
+
+    A -.->|Flow<br><b>MVP Blockers to Work</b>|B
+    A -->|Flow<br><b>MVP to My Schedule</b>|C
+    B -->|Flow<br><b>Work to My Schedule</b>|C
+    
+    C -.- D
+    D -->|Flow<br><b>Family Blockers to Work</b>| B
+    E -->|New Bookings<br>Family Calander|D
+    C -->|Presented Schedule<br>Inc Family Calander| E
+
+    G -.- D
+    F -->|New Bookings<br>Family Calander|D
+    G -->|Presented Schedule<br>Inc Family Calander| F
+
+</div>
 
 ## Setting Up
 
@@ -132,41 +170,3 @@ For my phone, I use the Outlook App as the owner of both MVP and Work Mail and C
 
 Set up personal profiles, and then Link to your Personal Gmail Account; this should then expose the shared calendars also.
 
-## The Big Picture
-
-Now with the boundaries defined, and the flows described, let's visualise this challenge
-
-
-<div class="mermaid">
-graph LR
-
-    subgraph Google Calanders
-    C[<b>My Schedule</b><br><i>My Personal<br>Google Calander</i>]
-    G[<b>Wifes Schedule</b><br><i>Her Personal<br>Google Calander</i>]
-    D(<b>Family</b><br><i>Shared Family<br>Google Calander</i>)
-    end
-
-
-    subgraph My Calanders
-    A[<b>MVP Calander</b><br><i>Office 365</i>]
-    B[<b>Work Calander</b><br><i>Office 365</i>]
-    end
-
-    E(<b>My Assistants Profile</b><br><i>Google/Alexa/Siri)
-    F(<b>Wife Assistants Profile</b><br><i>Google/Alexa/Siri)
-
-    A -.->|Flow<br><b>MVP Blockers to Work</b>|B
-    A -->|Flow<br><b>MVP to My Schedule</b>|C
-    B -->|Flow<br><b>Work to My Schedule</b>|C
-    
-    
-    C -.- D
-    D -->|Flow<br><b>Family Blockers to Work</b>| B
-    E -->|New Bookings<br>Family Calander|D
-    C -->|Presented Schedule<br>Inc Family Calander| E
-    
-    G -.- D
-    F -->|New Bookings<br>Family Calander|D
-    G -->|Presented Schedule<br>Inc Family Calander| F
-
-</div>

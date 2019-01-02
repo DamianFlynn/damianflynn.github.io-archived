@@ -1,26 +1,27 @@
 ---
 layout: post
+current: post
+class: post-template
+subclass: 'post'
+navigation: True
+cover: assets/images/posts/2018-10-20/banner.jpg
 title: "Laying Foundations in Azure"
-date: 2018-10-20 22:15:09
-comments: true
 description: Laying the foundation in Azure for a Static Site
+date: 2018-10-20 22:15:09
+author: damian
+comments: true
+tags:
+- Azure
 categories:
 - Developer
 - IT Pro/DevOps
 - Web
-tags:
 - OpenSource
 - Git / GitHub
 - Continuous Deployment
 - Azure
 - Web Sites
 - Cloud
-twitter_text: 'Static Site Foundations in Azure'
-authors: Damian Flynn
-image: http://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/products/cloud-foundation/vmware-cloud-foundation-overview.jpg
-image_url: .
-image_credit: Unknown
-
 ---
 
 Hosting my site on Wordpress was not super complex; I leveraged the Azure PaaS Services for Web Apps, and orginally the 3rd party support for hosted MySQL database's. Once I was up and running I quickly realised that all media hosted on the site were landing on the webserver, so a plugin from its marketplace offered the ability to relocate the media to an Azure Blob; offloading some of the challanges.
@@ -139,7 +140,7 @@ All we need do, is set this feature as *Enabled* and define where visitors shoul
 
 > Note: Due to Preview Status, we currently have no ARM Template settings for enabling and configuring this setting. Therefore for *Infrasructure as Code* we will fall back to *Azure CLI*
 
-```
+```bash
 az extension add --name storage-preview
 
 az storage blob service-properties update '

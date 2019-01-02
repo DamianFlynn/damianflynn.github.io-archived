@@ -1,16 +1,22 @@
 ---
 layout: post
+current: post
+class: post-template
+subclass: 'post'
+navigation: True
+cover: assets/images/posts/2018-10-21/banner.jpg
 title: "Original Content Archive"
+description: 
 date: 2018-10-21 22:15:15
-categories:
-- Announcements
+author: damian
+comments: true
 tags:
-- Achievements
-twitter_text: 'Blog Content reorganization'
-authors: Damian Flynn
-image: https://cdn.searchenginejournal.com/wp-content/uploads/2018/01/56CF5742-EA1C-40CD-94A2-45E6FF45AC46-760x400.jpeg
-image_url: .
-image_credit: unknown
+- General
+categories:
+- Web
+- Continuous Deployment
+- Azure
+- Web Sites
 ---
 
 A quick snoop around this new site will expose a little hole which I am working on addressing in batches.

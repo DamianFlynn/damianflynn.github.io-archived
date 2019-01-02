@@ -1,20 +1,20 @@
 ---
 layout: post
+current: post
+class: post-template
+subclass: 'post'
+navigation: True
+cover: assets/images/posts/2018-11-07/banner.jpg
 title: "Reading material: WaveMaker"
-date: 2018-11-07 10:30:30
-comments: true
 description: Careers are what we all invest our energy and emotions in, either positively or negatively
-categories:
-- Announcements
+date: 2018-11-07 10:30:30
+author: damian
+comments: true
 tags:
+- General
+categories:
 - Career
 - Books
-twitter_text: 'Reading material - WaveMaker career secrets'
-authors: Damian Flynn
-image: https://farm5.staticflickr.com/4502/26171785089_8a22ccf315_z.jpg
-image_url: .
-image_credit: Gareth Tynan
-
 ---
 
 Careers are what we all invest our energy and emotions in, either positively or negatively. Positive being the belief that we can make significant progress in this or another organisation and that it will give us the wherewithal to have a happy and productive life. Negative in that we can feel that everyone is out to get us, and the slippery pole has been freshly greased to scupper us. That it’s a “not what you know but who you know” world, and, unfortunately, you don’t know anyone. That life’s a bitch and then you die!

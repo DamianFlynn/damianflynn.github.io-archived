@@ -1,18 +1,23 @@
 ---
 layout: post
+current: post
+class: post-template
+subclass: 'post'
+navigation: True
+cover: assets/images/posts/2018-10-05/reset.jpg
 title: "Hitting Reset"
+description: Past, Present and Future
 date: 2018-10-05 18:10:05
-categories:
-- Announcements
-- Events
+author: damian
+comments: true
 tags:
+- General
+categories:
 - Career
 - MVP
 - Cisco Champion
-twitter_text: 'Hitting Reset!'
-authors: Damian Flynn
-image: https://static1.squarespace.com/static/5167abf2e4b0fdc6c239a718/t/587b21322994ca2394915658/1484465264915/RESET+logo
 ---
+
 
 10 Years, It is hard to believe that I have been posting thoughts here that long. And how so much has changed since I begun?
 

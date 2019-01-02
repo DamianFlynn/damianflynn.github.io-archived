@@ -1,22 +1,23 @@
 ---
 layout: post
+current: post
+class: post-template
+subclass: 'post'
+navigation: True
+cover: assets/images/posts/2018-11-18/banner.jpg
 title: "My Journey to the Internet of Things"
+description: While preparing to use the NodeMCU, Reminiscing IoT evolution after 20 Years 
 date: 2018-12-06 21:30:30
+author: damian
 comments: true
-description: While preparing to use the NodeMCU, Reminessing IoT evolution after 20 Years 
+tags:
+- Internet of Things
 categories:
 - Developer
-- Internet of Things
-- Smart Home/Buildings
-tags:
+- Smart Home
 - SoC
 - Microcontrollers
 - IoT
-twitter_text: 'Quick reflection on IoT, 20 years worth of evolution'
-authors: Damian Flynn
-image: /images/posts/2018-11-18/banner.jpg
-image_url: .
-image_credit: Espressif
 ---
 
 In a previous post, I referred to an embedded device which is called a **NodeMCU**. This device is a developer kit, designed to make it easy to develop and test programs for the embedded *ESP8266 System on a Chip*. Many manufacturers are offering both developer and production kits which leverage this SoC; including the Wemos D1, Lolin, and in my case the NodeMCU. 

@@ -1,74 +1,67 @@
 ---
 layout: default
+current: author
+title: Author Page
+cover: false
+class: 'author-template'
+navigation: True
+label: Author
+logo: 'assets/images/ghost.png'
 ---
-{% include post-image.html %}
-<div class="main-avatar">
-  <img src="{{ site.Contributors[page.author].avatar }}&s=120" alt="{{ page.author }}" />
-</div>
+<!-- < default}} -->
+<!-- The tag above means - insert everything in this file into the {body} of the default.hbs template -->
 
-{% include masthead.html %}
-{% include menu.html %}
-
-<div class="ui vertical stripe segment authors-page">
-  <div class="ui middle aligned stackable text container">
-
-  <h1><a href="/about/" data-tooltip="Learn More About Damian" data-position="bottom right">{{ page.author }}</a></h1>
-
-  {% if site.Contributors[page.author].desc %}
-    <p>{{ site.Contributors[page.author].desc }}</p>
-  {% endif %}
-
-  <div class="social">
-    {% if site.Contributors[page.author].twitter %}
-    <a href="https://twitter.com/{{ site.Contributors[page.author].twitter }}" data-tooltip="{{ site.Contributorsv[page.author].twitter | prepend: "@"}} on twitter" data-position="bottom right"><i class="icon twitter big"></i></a>
-    {% endif %}
-    {% if site.Contributors[page.author].github %}
-    <a href="https://github.com/{{ site.Contributors[page.author].github }}" data-tooltip="{{ site.Contributors[page.author].github }} on github" data-position="bottom left"><i class="icon github alternate big"></i></a>
-    {% endif %}
-  </div>
-
-  {{ content }}
-
-  {% for post in site.posts %}
-    {% for author in post.authors %}
-      {% if author == page.author %}
-      <div class="post-articles">
-        <article>
-          <header>
-            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          </header>
-          <author>
-            {% assign authorCount = post.authors | size %}
-
-            {% if authorCount > 1 %}
-              {% for author in post.authors %}
-                {% if forloop.first %}
-                  <a href="/authors/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
-                {% else %}
-                  | <a href="/authors/{{ author | replace: " ","-" | prepend: base.url | downcase }}/">{{ author }}</a>
+<!-- #author  -->
+<!-- Everything inside the #author tags pulls data from the author -->
+{% for author in site.data.authors %}
+    {% if author[1].username == page.author %}
+    <header class="site-header outer {% if author[1].cover or page.cover %}" style="background-image: url({{ site.baseurl }}{% if author[1].cover %}{{ author[1].cover }}{% elsif page.cover %}{{ page.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+        <div class="inner">
+            {% include site-nav.html %}
+            <div class="site-header-content">
+                {% if author[1].picture %}
+                    <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ page.author }}" />
                 {% endif %}
-              {% endfor %}
-            {% endif %}
+                <h1 class="site-title">{{ author[1].name }}</h1>
+                {% if author[1].bio %}
+                    <h2 class="author-bio">{{ author[1].bio }}</h2>
+                {% endif %}
+                <div class="author-meta">
+                    {% if author[1].location %}
+                        <div class="author-location">{{ author[1].location }} <span class="bull">&bull;</span></div>
+                    {% endif %}
+                    <div class="author-stats">
+                        {% if paginator.total_posts == 0 %}No posts{% elsif paginator.total_posts == 1 %}1 post{% else %}{{ paginator.total_posts }} posts{% endif %} <span class="bull">&bull;</span>
+                    </div>
+                    {% if author[1].url %}
+                        <a class="social-link social-link-wb" href="{{ author[1].url_full }}" target="_blank" rel="noopener">{% include website.html %}</a>
+                    {% endif %}
+                    {% if author[1].twitter %}
+                        <a class="social-link social-link-tw" href="https://twitter.com/{{ author[1].twitter }}" target="_blank" rel="noopener">{% include twitter.html %}</a>
+                    {% endif %}
+                    {% if author[1].linkedin %}
+                        <a class="social-link social-link-fb" href="https://ie.linkedin.com/in/{{ author[1].linkedin }}" target="_blank" rel="noopener">{% include linkedin.html %}</a>
+                    {% endif %}
+                    {% if author[1].facebook %}
+                        <a class="social-link social-link-fb" href="https://facebook.com/{{ author[1].facebook }}" target="_blank" rel="noopener">{% include facebook.html %}</a>
+                    {% endif %}
+                    <a class="social-link social-link-rss" href="https://feedly.com/i/subscription/feed/{{ site.production_url }}{{ site.baseurl }}author/{{ page.author }}/feed.xml" target="_blank" rel="noopener">{% include rss.html %}</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% endif %}
+{% endfor %}
+<!-- /author -->
 
-            <div class="time-to-read">
-              {% assign content = post.content %}
-              {% include word-count.html %}
-              <i class="icon book"></i> {{ words | plus: 250 | divided_by: 200 }}
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
 
-            </div><!-- /.time-to-read -->
-          </author>
-          <p>
-            {{ post.content | markdownify | strip_html | truncate:200 }}
-          </p>
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
+        </div>
 
-            {% for tags in post.tags %}
-            <a class="ui basic label orange" href="{{ site.url }}/tags/#{{ tags }}" title="{{ tags }}">{{ tags }}</a>
-            {% endfor %}
-        </article>
-      </div>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-
-</div>
-</div>
+    </div>
+</main>

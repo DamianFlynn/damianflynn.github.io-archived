@@ -1,63 +1,99 @@
-# Site settings
-description: A blog from Damian Flynn, a Microsoft MVP and Cisco Champion
-author: Damian Flynn
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://blog.damianflynn.com
-safe: false
+# Jekyll configuration
+markdown: kramdown
+highlighter: none #rouge
+paginate: 100 # it will paginate after this number
+language: 'en-uk'
+
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: / # the subpath of your site, e.g. /blog/
+
+# Website info
 title: Making Incredible Technology, Incredibly Simple
-default_image: /images/default/surface.jpg
-site_copyright: 2008-18 Damian Flynn.
-site_url: https://blog.damianflynn.com
-map_url: https://www.google.com/maps/place/Deer+Crest/@54.1205971,-9.240263,17z/data=!3m1!4b1!4m5!3m4!1s0x485938ff01b1f683:0xb699b4b3bca72fa0!8m2!3d54.1205971!4d-9.2380743
+description: A blog from Damian Flynn, a Microsoft MVP and Cisco Champion
+cover: assets/images/blog-cover.jpg
+author: Damian Flynn
+#logo: assets/images/blog-icon.png
+logo: assets/images/logos/sitelogo.svg
+logo_dark: assets/images/logos/sitelogo.svg
+favicon: assets/images/logos/favicon.png
+production_url: https://blog.damianflynn.com/
+source_url: https://github.com/jekyller/jasper2/
+CNAME: #add cname for website to be created
 
-# Font Awesome version
-fa_version: 4.6.0
+# Social info
+navigation: True # show the navbar links
+subscribers: False # you need to connect an external service for this to work,
+# if 'True' the submit button is disabled for now, but you can change that
+# by editing `_includes/subscribe-form.html`
+twitter: damian_flynn # replace by your username
+facebook: False # replace by your username
+linkedin: damianflynn
+github: damian_flynn
 
-# Build settings
-timezone: Europe/Dublin
-permalink: /:title/
+# Utteranc.es
+comments: True
+comments_identifier: DamianFlynn/damianflynn.github.io # replace with your id username
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+# Google Analytics
+google_analytics: UA-64134408-1 # replace with your GA tracking identifier
 
-# Plugins
-# sitemap: false in front matter of page to exclude
-plugins:
-  - jekyll-mentions
-  - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
+# Permalinks
+permalink: /:title
+#permalink: /author/:author
+#permalink: /tag/:tag
 
-# will convert @twitter-handle to the full twitter link in a post
-jekyll-mentions: https://twitter.com
+# Authors' info in `_data/authors.yml`
+# Tags' info in `_data/tags_info.yml`
 
-# User settings
-username: DamianFlynn
-user_description: Making Incrediable Technology, Increadibly Simple
-user_title: Damian Flynn
-user_logo: /assets/img/logos/damianflynn-logo-text-white.svg
-user_icon: /assets/img/logos/damianflynn-icon-white.svg
-email: info@damianflynn.com
-twitter_username: damian_flynn
-github_username:  damianflynn
-disqus_username: damianflynn
+# gems and other configs
+plugins_dir: [_plugins]
+plugins: [jekyll-paginate, jekyll-feed]
 
-# exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+feed:
+  path: feed.xml
 
-# Url Shortener
-shortener:
-  basepath: /s/        # Path for stored redirects.
-  preserve: false      # Keep previously generated files.
-  salt:     "Damian"   # The optional salt, used when hasing the Unix time.
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
 
-# Posting authors
-Contributors:
-  Damian Flynn:
-    avatar: https://avatars2.githubusercontent.com/u/6288143?v=3
-    title: Senior Principal Consultant, Cloud Architect
-    desc: Focused on Making Incrediable Technology, Increadibly Simple.
-    twitter: damian_flynn
-    github: damianflynn
+# Settings for builing master branch with travis-ci
+# with jekyll-travis
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: False
+lsi: False
+username: jekyller
+repo: jasper2
+branch: master
+relative_source: ../jasper2/
+#destination: ../jasper2-pages/
+#production_url:  https://jekyller.github.io/jasper2/
+#source_url:  https://github.com/jekyller/jasper2/
+
+exclude:
+  - assets/css
+  - node_modules
+  - vendor
+  - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - GHOST.txt
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - Rakefile
+  - README.md
+  - script.py
+  - changelog.md
+  - "*.Rmd"
+  - .git*
