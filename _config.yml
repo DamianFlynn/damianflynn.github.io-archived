@@ -34,7 +34,7 @@ permalink: /:title/
 plugins_dir: [_plugins]
 plugins: 
   - jekyll-paginate
-  - jekyll-feed]
+  - jekyll-feed
 #  - jekyll-mentions
 #  - jekyll-redirect-from
 #  - jekyll-seo-tag
