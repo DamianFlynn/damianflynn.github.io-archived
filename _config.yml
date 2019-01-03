@@ -23,7 +23,12 @@ markdown: kramdown
 highlighter: none #rouge
 paginate: 100 # it will paginate after this number
 language: 'en-uk'
-
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true
+    
 # Permalinks
 permalink: /:title/ 
 # Authors' info in `_data/authors.yml`
