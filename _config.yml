@@ -54,8 +54,9 @@ github: damian_flynn
 comments: True
 comments_identifier: DamianFlynn/damianflynn.github.io # replace with your id username
 
-# Google Analytics
+# Analytics
 google_analytics: UA-64134408-1 # replace with your GA tracking identifier
+application_insights: df18f8e9-8d8e-4506-b07b-7bcb088f74f5
 
 # gems and other configs
 
